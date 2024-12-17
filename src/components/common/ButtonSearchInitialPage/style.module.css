@@ -1,0 +1,20 @@
+.buttonSearchInitialPageContainer{
+    background-color: var(--green02);
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconPrincipal{
+    color: var(--white);
+    scale: 4.5;
+}
+
+.text{
+    transform: translateY(20px);
+    color: var(--white);
+}
