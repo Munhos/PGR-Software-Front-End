@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       <ModelPage
         urlAnterior={{ name: "Home", url: "/" }}
-        content={}
+        content={"teste"}
       />
 
     </div>
