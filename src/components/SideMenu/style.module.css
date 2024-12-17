@@ -1,0 +1,35 @@
+.main {
+    width: 250px;
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--green02), var(--green03));
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    overflow:hidden;
+}
+
+.logo {
+    transform: scale(0.5);
+    margin: -10px;
+}
+
+.iconHideMenu {
+    color: var(--white);
+    font-size: 25px;
+    width: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.link {
+    color: white;
+}
+
+.link2 {
+    color: white;
+    font-size: 10px;
+}

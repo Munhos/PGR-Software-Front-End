@@ -1,0 +1,107 @@
+/* Estilo personalizado para o icon */
+.iconPrincipal {
+  color: var(--white); /* Cor do ícone, pode ser ajustada */
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Estilos customizados para o botão do accordion */
+.accordion-button {
+  background-color: transparent; /* Fundo transparente */
+  border: 1px solid #ddd; /* Borda sutil */
+  color: #333; /* Cor do texto */
+  font-size: 16px; /* Ajuste do tamanho da fonte */
+  padding: 10px 15px; /* Ajuste do padding */
+  width: 100%;
+  
+}
+
+/* Estilo do conteúdo do accordion */
+.accordion-body {
+  background-color: #ffffff; /* Cor de fundo para o conteúdo */
+  padding: 15px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef; /* Cor de fundo quando o item está aberto */
+  border-color: #ccc; /* Cor de borda ao abrir */
+  
+}
+
+.accordionItem{
+  width: 90%;
+  padding: 10px;
+
+}
+
+.ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.li {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+
+.iconArrow {
+  font-size: 18px;
+  transition: transform 0.3s ease; /* Animação suave na transição da seta */
+  color: var(--white);
+}
+
+.accordionItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordionItem:hover {
+  background-color: var(--green02);
+  transition: 0.1s;
+}
+
+.mainContainerAccordionP1{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.accordionButton:not(.collapsed) {
+  color: var(--white);
+}
+
+.accordionButton {
+  color: var(--white);
+  width: 100%;
+  position: relative; /* Necessário para posicionar o pseudoelemento */
+}
+
+/* .accordionButton::after {
+  content: ''; 
+  display: block; 
+  width: 100%; 
+  height: 2px; 
+  background-color: var(--white); 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  transform: translateY(8px); 
+  transition: transform 0.3s ease; 
+} */
+
+/* Adiciona o efeito ao botão quando o accordion não está colapsado */
+.accordionButton:not(.collapsed)::after {
+  transform: translateY(10px); /* Distância maior quando o accordion está aberto */
+}
+
+
+.accordionHeader {
+  width: 100%;
+}

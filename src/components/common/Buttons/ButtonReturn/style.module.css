@@ -1,0 +1,44 @@
+.buttonReturnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+.iconReturn {
+    color: var(--white);
+    scale: 1;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 24px;
+
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green03);
+
+    margin-right: 10px;
+
+    border-radius: 50%;
+}
+
+.link:hover {
+    cursor: default;
+}
+
+.iconReturn:hover {
+    cursor: pointer;
+}
+
+.text {
+    transform: translateY(2px);
+}
