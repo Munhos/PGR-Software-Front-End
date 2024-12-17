@@ -1,6 +1,5 @@
 .main {
     display: flex;
-    position: relative;
 }
 
 .iconReturn {
@@ -23,4 +22,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.containerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 95%;
+    margin-top: 15px;
+}
+
+.containerButtonReturn {
+    display: flex;
+    justify-content: start;
+    width: 100% ;
 }

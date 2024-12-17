@@ -6,23 +6,33 @@ import ButtonReturn from "../Buttons/ButtonReturn";
 
 interface ModelPageProps {
     urlAnterior?: { url: string, name: string };
+    content: any
 }
 
-export default function ModelPage({ urlAnterior }: ModelPageProps) {
+export default function ModelPage({ urlAnterior, content }: ModelPageProps) {
 
 
     return (
         <main className={styles.main}>
             <SideMenu />
 
-            {
-                urlAnterior ? (
-                    <ButtonReturn
-                        text={urlAnterior.name}
-                        url={urlAnterior.url}
-                    />
-                ) : null
-            }
+            <div className={styles.containerContent}>
+                <div className={styles.containerButtonReturn}>
+                {
+                    urlAnterior ? (
+                        <ButtonReturn
+                            text={urlAnterior.name}
+                            url={urlAnterior.url}
+                        />
+                    ) : null
+                }
+                </div>
+                
+
+                <div className={styles.content}>
+                    {content}
+                </div>
+            </div>
 
 
 
