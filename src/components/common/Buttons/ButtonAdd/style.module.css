@@ -16,3 +16,8 @@
 .iconAdd:hover, .buttonAddContainer:hover{
     cursor: pointer;
 }
+
+.buttonAddContainer:hover {
+    background-color: var(--green03);
+
+}

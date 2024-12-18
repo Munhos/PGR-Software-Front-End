@@ -1,0 +1,23 @@
+.input-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-wrapper::after {
+    content: ""; /* Cria o pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--green03);
+}
+
+.input {
+    width: 100%; /* Garante que o input ocupe todo o espaço do contêiner */
+    padding-bottom: 5px; /* Espaço para o ::after não sobrepor o texto */
+    border: none; /* Remove bordas, se necessário */
+    outline: none; /* Remove o outline padrão */
+}
+
+
