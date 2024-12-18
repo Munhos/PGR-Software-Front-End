@@ -6,11 +6,7 @@ export default function Home() {
     <div>
       <ModelPage
         urlAnterior={{ name: "Home", url: "/" }}
-<<<<<<< HEAD
-        content={"teste"}
-=======
         content={ <InicialMenuComponent /> }
->>>>>>> origin/LucasWorkspace
       />
 
     </div>
