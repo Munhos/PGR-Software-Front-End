@@ -1,4 +1,21 @@
-.buttonSearchInitialPageContainer{
+.buttonWithDropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    gap: 5px;
+}
+
+.buttonWithDropdown:hover {
+    cursor: pointer;
+    background-color: var(--green01);
+    transition: background-color 0.3s ease;
+}
+
+.buttonSearchInitialPageContainer {
     background-color: var(--green02);
     width: 150px;
     height: 150px;
@@ -11,19 +28,62 @@
     align-items: center;
 }
 
-.iconPrincipal{
+.iconPrincipal {
     color: var(--white);
     scale: 4.5;
 }
 
-.text{
+.text {
     transform: translateY(20px);
     color: var(--white);
 }
 
-.iconSecundary{
+.iconSecundary {
     color: var(--white);
     scale: 1.2;
     position: absolute;
     top: 120px;
+}
+
+.buttonSearchInitialPageContainer:hover, 
+.iconPrincipal:hover, 
+.iconSecundary:hover {
+    cursor: pointer;
+    background-color: var(--green01);
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do botão */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green02);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--green01);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 5px 0;
+}
+
+
+.dropdownItem {
+    padding: 10px;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: var(--green02);
+    transition: background-color 0.3s ease;
+}
+
+.dropdownItem:hover {
+    background-color: var(--green01);
+    color: var(--white);
+    cursor: pointer;
 }
