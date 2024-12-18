@@ -1,0 +1,11 @@
+.buttonSaveContainer {
+    padding: 15px;
+    background-color: var(--green02);
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 10px;
+}

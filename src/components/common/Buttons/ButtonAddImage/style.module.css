@@ -1,0 +1,37 @@
+.buttonAddContainer {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green02);
+    margin-bottom: 15px;
+}
+
+.buttonAddContainer:hover {
+    background-color: var(--green03);
+    cursor: pointer;
+}
+
+.iconAdd{
+    color: var(--white);
+    scale: 1.9;
+}
+
+.iconAdd2 {
+    color: var(--white);
+    scale: 1.3;
+}
+
+.imageThumbnail {
+    max-width: 300px;
+
+}
+
+.buttonAddImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

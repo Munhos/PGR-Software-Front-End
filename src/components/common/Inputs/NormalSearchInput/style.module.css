@@ -1,6 +1,7 @@
 .input-wrapper {
     position: relative;
     margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 .input-wrapper::after {

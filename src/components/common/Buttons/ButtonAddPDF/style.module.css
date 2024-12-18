@@ -1,0 +1,32 @@
+.addPDFButtonContainer {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green02);
+    margin-bottom: 15px;
+}
+
+.addPDFButtonContainer:hover {
+    background-color: var(--green03);
+    cursor: pointer;
+}
+
+.addPDFIcon{
+    color: var(--white);
+    scale: 1.9;
+}
+
+.removePDFIcon {
+    color: var(--white);
+    scale: 1.3;
+}
+
+.ButtonAddPDFContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
