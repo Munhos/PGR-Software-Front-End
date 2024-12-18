@@ -1,10 +1,10 @@
 import React from "react";
-import TableComponent from "../../common/Tables"; 
-import NormalSearchInput from "../../common/Inputs/NormalSearchInput"; 
+import TableComponent from "@/components/common/Tables";
+import NormalSearchInput from "@/components/common/Inputs/NormalSearchInput";
 import styles from "./style.module.css";
-import ButtonSearch from "../../common/Buttons/ButtonSearch"; 
-import ButtonAdd from "../../common/Buttons/ButtonAdd"; 
-import ButtonClean from "../../common/Buttons/ButtonClean"; 
+import ButtonSearch from "@/components/common/Buttons/ButtonSearch";
+import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
+import ButtonClean from "@/components/common/Buttons/ButtonClean";
 
 export default function PgrTypeComponent() {
     return (

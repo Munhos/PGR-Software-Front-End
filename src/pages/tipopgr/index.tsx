@@ -1,6 +1,6 @@
 import React from "react";
 import ModelPage from "@/components/common/ModelPage";
-import PgrTypeComponent from "@/components/TipoPgr/GeneralTipoPGR";
+import PgrTypeComponent from "@/components/Cadastro/TipoPgr/GeneralTipoPGR";
 
 export default function pgrtype() {
     
