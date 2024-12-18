@@ -4,6 +4,7 @@ import NormalSearchInput from "@/components/common/Inputs/NormalSearchInput";
 import SelecionableSearchInput from "@/components/common/Inputs/SelecionableSearchInput";
 import ButtonAddImage from "@/components/common/Buttons/ButtonAddImage";
 import ButtonAddPDF from "@/components/common/Buttons/ButtonAddPDF";
+import ButtonSave from "@/components/common/Buttons/ButtonSave";
 
 export default function NewClient() {
     return (
@@ -48,6 +49,7 @@ export default function NewClient() {
             <div className={styles.divContainerInputs2}>
                 <div><ButtonAddImage type="button"/></div>
                 <div><ButtonAddPDF type="button"/></div>
+                <div><ButtonSave /></div>
             </div>
             
         </div>
