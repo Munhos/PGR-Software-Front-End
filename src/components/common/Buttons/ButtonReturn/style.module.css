@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--green03);
+    background-color: var(--green02);
 
     margin-right: 10px;
 
@@ -33,6 +33,7 @@
 
 .link:hover {
     cursor: default;
+    background-color: var(--green03);
 }
 
 .iconReturn:hover {
