@@ -1,5 +1,5 @@
 import ModelPage from "@/components/common/ModelPage";
-import InicialMenuComponent from "@/components/incialMenuComponent";
+import InicialMenuComponent from "@/components/Home";
 
 export default function Home() {
   return (
