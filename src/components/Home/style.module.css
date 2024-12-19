@@ -11,8 +11,8 @@
 
 .containerButton{
     display: flex;
-    gap: 20px;
     position: absolute;
+    gap: 20px;
     top: -51px;
     right: 0;
 
