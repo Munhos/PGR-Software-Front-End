@@ -52,7 +52,6 @@ export default function ButtonSearchInitialPage({
           {dropdownItems.map((item, index) => (
             <a
               key={index}
-              href={`${url}/${item.toLowerCase().replace(" ", "-")}`}
               className={styles.dropdownItem}
             >
               {item}

@@ -17,8 +17,8 @@
 
 .buttonSearchInitialPageContainer {
     background-color: var(--green02);
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     position: relative;
     border-radius: 10px;    
     display: flex;
@@ -42,7 +42,7 @@
     color: var(--white);
     scale: 1.2;
     position: absolute;
-    top: 120px;
+    top: 115px;
 }
 
 .buttonSearchInitialPageContainer:hover, 

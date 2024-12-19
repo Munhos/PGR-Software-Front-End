@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 import ButtonSearch from "../../common/Buttons/ButtonSearch";
 import ButtonAdd from "../../common/Buttons/ButtonAdd";
 import ButtonClean from "../../common/Buttons/ButtonClean";
+import Link from "next/link";
 
 export default function ClientsComponent() {
     return (
@@ -27,9 +28,12 @@ export default function ClientsComponent() {
 
                 </div>
 
+                <Link href="/clientes/novocliente">
                 <ButtonAdd 
                         type="button"
                     />
+                </Link>
+                
 
             </div>
             <TableComponent
@@ -38,8 +42,10 @@ export default function ClientsComponent() {
                     tBodyData: [
                         ["00.000.000/0000-00", "Joaquim"],
                         ["00.000.000/0000-00", "Joaquim"],
-                        ["00.000.000/0000-00", "Joaquim"]
+                        ["00.000.000/0000-00", "Joaquim"],
                     ],
+                    idsData: ["000aa1", "000aa2", "000aa3"],
+                   
                 }}
             />
         </div>

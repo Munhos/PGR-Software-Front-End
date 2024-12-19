@@ -3,11 +3,15 @@ import ButtonDeleteTable from "./ButtonDelete";
 import ButtonEditTable from "./ButtonEdit";
 import styles from "./style.module.css"
 
-export default function ConjunctButtonEditDelete() {
+interface ButtonEditTableProps {
+    idData: string
+}
+
+export default function ConjunctButtonEditDelete({idData}: ButtonEditTableProps) {
     return (
         <div className={styles.containerButonsTable}>
-            <ButtonEditTable />
-            <ButtonDeleteTable />
+            <ButtonEditTable idData={idData}/>
+            <ButtonDeleteTable idData={idData}/>
         </div>
     );
 }

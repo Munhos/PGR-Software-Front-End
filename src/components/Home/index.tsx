@@ -4,14 +4,18 @@ import ButtonAdd from "../common/Buttons/ButtonAdd";
 import ButtonSearchInitialPage from "../common/ButtonSearchInitialPage";
 import styles from "./style.module.css";
 import SelecionableSearchInput from "../common/Inputs/SelecionableSearchInput";
+import Link from "next/link";
 
 export default function InicialMenuComponent() {
   return (
     <div className={`${styles.InicialMenuComponent}`}>
       <div className={`${styles.containerButton}`}>
-        <SelecionableSearchInput value={["SEARA", "JBS", "Santa Terezinha"]} />
+        <SelecionableSearchInput value={["SEARA", "JBS", "Santa Terezinha"]} width="" placeHolder="Selecione um Cliente" />
         <ButtonSearch type="button" />
-        <ButtonAdd type="button" />
+        <Link href="/clientes">
+          <ButtonAdd type="button" />
+        </Link>
+        
       </div>
       <div className={`${styles.containerPrimaryButtons}`}>
         <ButtonSearchInitialPage

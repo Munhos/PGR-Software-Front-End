@@ -1,5 +1,5 @@
 import React from "react";
-import NewClient from "@/components/ClientsComponent/NewClient";
+import NewAndEditClient from "@/components/ClientsComponent/NewAndEditClient";
 import ModelPage from "@/components/common/ModelPage";
 
 export default function NovoCliente() {
@@ -7,7 +7,7 @@ export default function NovoCliente() {
         <div>
             <ModelPage
                 urlAnterior={{ name: "Clientes", url: "/clientes" }}
-                content={<NewClient />}
+                content={<NewAndEditClient />}
             />
             
         </div>

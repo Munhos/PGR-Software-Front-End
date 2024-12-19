@@ -1,0 +1,43 @@
+.inputRow {
+    display: flex;
+}
+
+.multiSelectInput {
+    width: 99%;
+    margin-bottom: 15px;
+}
+
+.divContainerInputs2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.generateLaudosContainer {
+    width: 100%;
+    height: 270px;
+    background-color: var(--green05);
+    padding: 20px;
+}
+
+.generateLaudosTableContainer {
+    width: 100%;
+}
+
+.tableTr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableTd {
+    width: 33.33%;
+    height: calc(200px / 3);
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.tableTd > input {
+    margin-right: 10px;
+}

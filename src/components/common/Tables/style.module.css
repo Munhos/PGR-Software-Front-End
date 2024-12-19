@@ -1,0 +1,4 @@
+.table th {
+    color: rgb(255, 255, 255) !important; /* Adicione isso se precisar mudar a cor do texto */
+    background-color: var(--green02);
+}

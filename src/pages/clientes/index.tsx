@@ -8,7 +8,7 @@ export default function Clientes() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Clientes", url: "/clientes" }}
+                urlAnterior={{ name: "Clientes", url: "/" }}
                 content={<ClientsComponent />}
             />
         </div>

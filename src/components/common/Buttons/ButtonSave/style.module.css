@@ -9,3 +9,8 @@
     color: var(--white);
     border-radius: 10px;
 }
+
+.buttonSaveContainer:hover {
+    cursor: pointer;
+    background-color: var(--green03);
+}

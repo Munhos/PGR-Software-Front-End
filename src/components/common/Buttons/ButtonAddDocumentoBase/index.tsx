@@ -40,7 +40,7 @@ export default function ButtonAddPDF({ type }: ButtonAddPDFProps) {
                 <label htmlFor="pdf-upload" className={`${styles.addPDFButtonContainer}`}>
                     <i className={`bi bi-plus ${styles.addPDFIcon}`}></i>
                 </label>
-                <h6>Adicionar PDF</h6>
+                <h6>Adicionar Documento Base</h6>
                 
                 </>
             )}

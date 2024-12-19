@@ -43,7 +43,7 @@ export default function ButtonAddImage({ type }: ButtonAddProps) {
                         <i className={`bi bi-plus ${styles.iconAdd}`}></i>
                     </label>
 
-                    <h6>Adicionar Imagem</h6>
+                    <h6>Adicionar Logo</h6>
                 </>
             )}
 
