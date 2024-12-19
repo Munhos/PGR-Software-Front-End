@@ -3,13 +3,16 @@ import ButtonSearch from "../common/Buttons/ButtonSearch";
 import ButtonAdd from "../common/Buttons/ButtonAdd";
 import ButtonSearchInitialPage from "../common/ButtonSearchInitialPage";
 import styles from "./style.module.css";
-import SelecionableSearchInput from "../common/Inputs/SelecionableSearchInput";
+import SimpleInputSelect from "../common/Inputs/ComboboxSelecionable";
 
 export default function InicialMenuComponent() {
   return (
     <div className={`${styles.InicialMenuComponent}`}>
       <div className={`${styles.containerButton}`}>
-        <SelecionableSearchInput value={["SEARA", "JBS", "Santa Terezinha"]} />
+        <SimpleInputSelect
+          options={["SEARA", "JBS", "Santa Terezinha", "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA"]}
+          placeholder="Selecione um Cliente"
+        />
         <ButtonSearch type="button" />
         <ButtonAdd type="button" />
       </div>
@@ -48,10 +51,8 @@ export default function InicialMenuComponent() {
         <ButtonSearchInitialPage
           url="/cadastros"
           icon="bi bi-journal-plus"
-          arrow="bi bi-caret-down"
+          arrow=" "
           text="Cadastros"
-          dropdownItems={["PGR", "Cargo", "Setor", "Gerência", "Função", "RAC", "Edificação", "Piso", "Teto", "Parede", "Ventilação", 
-            "Iluminação", "Mobiliários", "Equipamentos", "Cursos obrigatórios", "EPI's"]}
         />
         <ButtonSearchInitialPage
           url="/financeiro"
