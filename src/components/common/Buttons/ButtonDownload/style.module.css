@@ -1,0 +1,23 @@
+.buttonSearchContainer{
+    background-color: var(--green02);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSearch{
+    color: var(--white);
+    scale: 1.2;
+}
+
+.iconSearch:hover, .buttonSearchContainer:hover{
+    cursor: pointer;
+}
+
+.buttonSearchContainer:hover {
+    background-color: var(--green03);
+
+}

@@ -32,9 +32,13 @@ export default function SideMenu() {
 
             {
                 showSideMenu ? (
-                    <img src={logoTipoPGRSoftware.src} alt="Logo PGR Software" className={styles.logo} />
+                    <Link href={"/"}>
+                        <img src={logoTipoPGRSoftware.src} alt="Logo PGR Software" className={styles.logo} />
+                    </Link>
                 ) : (
-                    <img src={logoPGRSoftware.src} alt="Logo PGR Software" className={styles.logo} />
+                    <Link href={"/"}>
+                        <img src={logoPGRSoftware.src} alt="Logo PGR Software" className={styles.logo} />
+                    </Link>
                 )
             }
 

@@ -4,6 +4,9 @@ import "bootstrap-icons/font/bootstrap-icons.css"; // Importando ícones do Boot
 import ConjunctButtonEditDelete from "../Buttons/ButtonsTable/ConjunctButtonEditDelete";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './style.module.css'; // Seu CSS deve vir depois
+import { useRouter } from "next/router";
+import ButtonDownload from "../Buttons/ButtonDownload";
+import ButtonDeleteTable from "../Buttons/ButtonsTable/ConjunctButtonEditDelete/ButtonDelete";
 
 interface TableComponentProps {
     dataTable: {
@@ -17,6 +20,9 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
     const [formatedData, setFormatedData] = useState<any[]>([]);
     const [atualPage, setAtualPage] = useState(1);
     const [numberPages, setNumberPages] = useState(0);
+
+    const router = useRouter(); // Hook do Next.js
+    const currentPage = router.pathname; // Obter o caminho atual
 
     const handleTogglePopover = (id: string) => {
         setOpenPopoverId((prevId) => (prevId === id ? null : id));
@@ -110,8 +116,6 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
         ));
     };
 
-    console.log(formatedData)
-
     return (
         <div className={`table-responsive ${styles.tableContainer}`}>
             <table className={` ${styles.table} table`}>
@@ -143,7 +147,8 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
                                             key={index}
                                             className="text-start"
                                             style={{
-                                                width: `calc(100% / ${row.length - 1})`,  
+                                                width: `calc(100% / ${row.length - 1})`,
+                                                wordBreak: "break-word",
                                             }}
                                         >
                                             {item}
@@ -151,17 +156,27 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
                                     ))
                                 }
                                 <td className="text-end">
-                                    <OverlayTrigger
-                                        trigger="click"
-                                        placement="top"
-                                        overlay={renderPopover(row[0])} 
-                                        show={openPopoverId === row[0]} 
-                                        onToggle={() => handleTogglePopover(row[0])} 
-                                    >
-                                        <button className="btn btn-link">
-                                            <i style={{ color: "var(--green02)" }} className="bi bi-three-dots"></i>
-                                        </button>
-                                    </OverlayTrigger>
+                                    {
+                                        currentPage == "/laudos" ? (
+                                            <div style={{ display: "flex", justifyContent: "flex-end", gap: "15px", alignItems: "center" }}>
+                                                <ButtonDownload type="button" />
+                                                <ButtonDeleteTable idData={row[0]} />
+                                            </div>
+                                        ) : (
+                                            <OverlayTrigger
+                                                trigger="click"
+                                                placement="top"
+                                                overlay={renderPopover(row[0])}
+                                                show={openPopoverId === row[0]}
+                                                onToggle={() => handleTogglePopover(row[0])}
+                                            >
+                                                <button className="btn btn-link">
+                                                    <i style={{ color: "var(--green02)" }} className="bi bi-three-dots"></i>
+                                                </button>
+                                            </OverlayTrigger>
+                                        )
+                                    }
+
                                 </td>
                             </tr>
                         ))}

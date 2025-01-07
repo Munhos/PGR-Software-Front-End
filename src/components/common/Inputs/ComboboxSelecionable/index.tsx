@@ -4,9 +4,10 @@ import styles from "./style.module.css";
 interface SimpleInputSelectProps {
   options: string[];
   placeholder?: string;
+  width?: string;
 }
 
-export default function SimpleInputSelect({ options, placeholder }: SimpleInputSelectProps) {
+export default function SimpleInputSelect({ options, placeholder, width }: SimpleInputSelectProps) {
   const [inputValue, setInputValue] = useState("");
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -51,7 +52,7 @@ export default function SimpleInputSelect({ options, placeholder }: SimpleInputS
   }, []);
 
   return (
-    <div ref={containerRef} className={styles.container}>
+    <div ref={containerRef} className={styles.container} style={{ width }}>
       <textarea
         ref={textareaRef}
         value={inputValue}
