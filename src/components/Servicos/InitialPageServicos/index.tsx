@@ -1,10 +1,11 @@
 import React from "react";
-import NormalSearchInput from "../common/Inputs/NormalSearchInput";
-import ButtonSearch from "../common/Buttons/ButtonSearch";
-import ButtonClean from "../common/Buttons/ButtonClean";
+import NormalSearchInput from "../../common/Inputs/NormalSearchInput";
+import ButtonSearch from "../../common/Buttons/ButtonSearch";
+import ButtonClean from "../../common/Buttons/ButtonClean";
 import styles from './style.module.css';
-import ButtonAdd from "../common/Buttons/ButtonAdd";
-import TableComponent from "../common/Tables";
+import ButtonAdd from "../../common/Buttons/ButtonAdd";
+import TableComponent from "../../common/Tables";
+import Link from "next/link";
 
 export default function InitialPageServicos() {
     return (
@@ -24,15 +25,15 @@ export default function InitialPageServicos() {
                         type="button"
                     />
                 </div>
-                <div>
+                <Link href="/servico/novoservico">
                     <ButtonAdd type="button" />
-                </div>
+                </Link>
             </div>
 
             <TableComponent 
                 dataTable={{
                     tHeadData: ["Descrição", "Dt de Início", "Dt de Fim"],
-                    tBodyData: [["001", "Descrição", "Dt de Início", "Dt de Fim"]]
+                    tBodyData: [["001", "Descrição teste", "01/01/2025", "02/02/2025"]]
                 }}
             />
         </>

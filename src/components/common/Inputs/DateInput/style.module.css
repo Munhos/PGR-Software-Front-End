@@ -1,0 +1,18 @@
+.inputWrapper {
+    position: relative; 
+}
+
+.inputWrapper::after {
+    content: ""; /* Cria o pseudo-elemento */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--green03);
+}
+
+.inputWrapper > input{
+    width: 100%;
+    border: none;
+}
