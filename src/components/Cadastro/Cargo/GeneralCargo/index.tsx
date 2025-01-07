@@ -36,10 +36,10 @@ export default function CargoComponent() {
                 dataTable={{
                     tHeadData: ["Descrição"],
                     tBodyData: [
-                        ["Gerente"],
-                        ["Diretor"],
-                        ["Estagiário"]
-                    ],
+                        ["001", "Gerente"],
+                        ["002", "Diretor"],
+                        ["003", "Estagiário"]
+                    ]
                 }}
             />
         </div>

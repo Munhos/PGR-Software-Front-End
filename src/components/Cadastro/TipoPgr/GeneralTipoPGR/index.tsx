@@ -36,10 +36,10 @@ export default function PgrTypeComponent() {
                 dataTable={{
                     tHeadData: ["Descrição"],
                     tBodyData: [
-                        ["PGR"],
-                        ["PGRTR"],
-                        ["PGRMIN"]
-                    ],
+                        ["001", "PGR"],
+                        ["002", "PGRTR"],
+                        ["003", "PGRMIN"]
+                    ]
                 }}
             />
         </div>

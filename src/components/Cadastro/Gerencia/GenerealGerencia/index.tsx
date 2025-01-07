@@ -36,11 +36,10 @@ export default function GerenciaComponent() {
                 dataTable={{
                     tHeadData: ["Descrição"],
                     tBodyData: [
-                        ["Gerência de Operações"],
-                        ["Gerência de Fabricação"],
-                        ["Gerência de Engenharia"]
-                    ],
-                    idsData: ["0001", "0002", "0003"],
+                        ["001", "Gerência de Operações"],
+                        ["002", "Gerência de Fabricação"],
+                        ["003", "Gerência de Engenharia"]
+                    ]
                 }}
             />
         </div>

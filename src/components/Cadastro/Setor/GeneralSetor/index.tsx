@@ -36,9 +36,9 @@ export default function SetorComponent() {
                 dataTable={{
                     tHeadData: ["Descrição"],
                     tBodyData: [
-                        ["TI"],
-                        ["Laboratório Químico"],
-                        ["Manutenção Mecânica"]
+                        ["001", "TI"],
+                        ["002", "Laboratório Químico"],
+                        ["003", "Manutenção Mecânica"]
                     ],
                 }}
             />
