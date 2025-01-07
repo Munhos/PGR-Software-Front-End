@@ -40,6 +40,7 @@ export default function GerenciaComponent() {
                         ["Gerência de Fabricação"],
                         ["Gerência de Engenharia"]
                     ],
+                    idsData: ["000aa1", "000aa2", "000aa3"],
                 }}
             />
         </div>

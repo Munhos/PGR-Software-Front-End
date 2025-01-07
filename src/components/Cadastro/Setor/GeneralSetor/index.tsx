@@ -40,6 +40,7 @@ export default function SetorComponent() {
                         ["Laboratório Químico"],
                         ["Manutenção Mecânica"]
                     ],
+                    idsData: ["000aa1", "000aa2", "000aa3"],
                 }}
             />
         </div>
