@@ -3,7 +3,7 @@ import ButtonSearch from "../common/Buttons/ButtonSearch";
 import ButtonAdd from "../common/Buttons/ButtonAdd";
 import ButtonSearchInitialPage from "../common/ButtonSearchInitialPage";
 import styles from "./style.module.css";
-import SimpleInputSelect from "../common/Inputs/ComboboxSelecionable";
+import SearchEquipamentoComponent from "../common/Inputs/ComboboxSelecionable";
 import Link from "next/link";
 
 export default function InicialMenuComponent() {
@@ -11,9 +11,9 @@ export default function InicialMenuComponent() {
     <>
     
     <div className={`${styles.containerButton}`}>
-        <SimpleInputSelect
+        <SearchEquipamentoComponent
           options={["SEARA", "JBS", "Santa Terezinha", "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA"]}
-          placeholder="Selecione um Cliente"
+          placeholder={"Selecione um Cliente"}
         />
         <ButtonSearch type="button" />
         
