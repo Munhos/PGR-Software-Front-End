@@ -8,18 +8,22 @@ import Link from "next/link";
 
 export default function InicialMenuComponent() {
   return (
-    <div className={`${styles.InicialMenuComponent}`}>
-      <div className={`${styles.containerButton}`}>
+    <>
+    
+    <div className={`${styles.containerButton}`}>
         <SimpleInputSelect
           options={["SEARA", "JBS", "Santa Terezinha", "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA"]}
           placeholder="Selecione um Cliente"
         />
         <ButtonSearch type="button" />
+        
         <Link href="/clientes">
           <ButtonAdd type="button" />
         </Link>
         
       </div>
+    <div className={`${styles.InicialMenuComponent}`}>
+      
       <div className={`${styles.containerPrimaryButtons}`}>
         <ButtonSearchInitialPage
           url="/servicos"
@@ -67,5 +71,6 @@ export default function InicialMenuComponent() {
         />
       </div>
     </div>
+    </>
   );
 }

@@ -11,10 +11,11 @@
 
 .containerButton{
     display: flex;
-    position: absolute;
+    align-items: center;
+    justify-content: end;
     gap: 20px;
-    top: -51px;
     right: 0;
+    margin-top: -50px;
 
 }
 

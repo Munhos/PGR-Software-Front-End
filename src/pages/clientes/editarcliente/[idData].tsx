@@ -1,17 +1,19 @@
-import NewAndEditClient from '@/components/ClientsComponent/NewAndEditClient';
-import ModelPage from '@/components/common/ModelPage';
+import React from "react";
+import ModelPage from "@/components/common/ModelPage";
+import EspecificClient from "@/components/ClientsComponent/EspecificClient";
 import { useRouter } from 'next/router';
 
-export default function ItemPage() {
-    const router = useRouter();
-    const { idData } = router.query;
+
+export default function Cliente() {
+
+        const router = useRouter();
+        const { idData } = router.query;
 
     return (
         <div>
             <ModelPage
                 urlAnterior={{ name: "Clientes", url: "/clientes" }}
-                content={
-                    <NewAndEditClient 
+                content={<EspecificClient 
                         cnpj="00.000.000/0001-00"
                         nomeFantasia="Empresa Fictícia LTDA"
                         razaoSocial="Empresa Fictícia Comércio de Produtos LTDA"
@@ -27,9 +29,9 @@ export default function ItemPage() {
                         contato="(11) 98765-4321"
                         email="contato@empresaficticia.com"
                         observacao="Cliente registrado para teste no sistema."
-                    />
-                }
+                />}
             />
+
         </div>
     );
 }

@@ -5,6 +5,7 @@ import SelecionableSearchInput from "@/components/common/Inputs/SelecionableSear
 import ButtonAddImage from "@/components/common/Buttons/ButtonAddImageLogo";
 import ButtonAddPDF from "@/components/common/Buttons/ButtonAddDocumentoBase";
 import ButtonSave from "@/components/common/Buttons/ButtonSave";
+import WriteInput from "@/components/common/Inputs/WriteInput/WriteInput";
 
 interface newClientProps {
     cnpj?: string;
@@ -48,11 +49,11 @@ export default function NewAndEditClient({
     return (
         <div className={styles.container}>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={cnpj} width="30%" placeHolder="CNPJ"/>
-            <NormalSearchInput content={nomeFantasia} width="70%" placeHolder="Nome Fantasia"/>
+            <WriteInput label="CNPJ" content={cnpj || ""} width="30%" placeHolder="CNPJ"/>
+            <WriteInput label="Nome Fantasia" content={nomeFantasia || ""} width="70%" placeHolder="Nome Fantasia"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={razaoSocial} width="100%" placeHolder="Razão Social"/>
+            <WriteInput label="Razão Social" content={razaoSocial || ""} width="100%" placeHolder="Razão Social"/>
             </div>
             <div className={styles.divContainerInputs}>
             <SelecionableSearchInput 
@@ -62,27 +63,27 @@ export default function NewAndEditClient({
             />
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={atividadePrincipal} width="70%" placeHolder="Atividade Principal"/>
-            <NormalSearchInput content={grauRisco} width="30%" placeHolder="Grau de Risco"/>
+            <WriteInput label="Atividade Principal" content={atividadePrincipal || ""} width="70%" placeHolder="Atividade Principal"/>
+            <WriteInput label="Grau de Risco" content={grauRisco || ""} width="30%" placeHolder="Grau de Risco"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={cep} width="33%" placeHolder="CEP"/>
-            <NormalSearchInput content={estado} width="33%" placeHolder="Estado"/>
-            <NormalSearchInput content={cidade} width="33%" placeHolder="Cidade"/>
+            <WriteInput label="CEP" content={cep || ""} width="33%" placeHolder="CEP"/>
+            <WriteInput label="Estado" content={estado || ""} width="33%" placeHolder="Estado"/>
+            <WriteInput label="Cidade" content={cidade || ""} width="33%" placeHolder="Cidade"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={localizacaoCompleta} width="100%" placeHolder="Localização Completa"/>
+            <WriteInput label="Localização Completa" content={localizacaoCompleta || ""} width="100%" placeHolder="Localização Completa"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={responsavelAprovacao} width="70%" placeHolder="Responsável pela Aprovação"/>
-            <NormalSearchInput content={data} width="30%" placeHolder="Data"/>
+            <WriteInput label="Responsável pela Aprovação" content={responsavelAprovacao || ""} width="70%" placeHolder="Responsável pela Aprovação"/>
+            <WriteInput label="Data" content={data || ""} width="30%" placeHolder="Data"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={email} width="50%" placeHolder="E-mail Financeiro"/>
-            <NormalSearchInput content={contato} width="50%" placeHolder="Contato Financeiro"/>
+            <WriteInput label="E-mail Financeiro" content={email || ""} width="50%" placeHolder="E-mail Financeiro"/>
+            <WriteInput label="Contato Financeiro" content={contato || ""} width="50%" placeHolder="Contato Financeiro"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <NormalSearchInput content={observacao} width="100%" placeHolder="Observações"/>
+            <WriteInput label="Observações" content={observacao || ""} width="100%" placeHolder="Observações"/>
             </div>
             <div className={styles.divContainerInputs2}>
                 <div><ButtonAddImage type="button"/></div>

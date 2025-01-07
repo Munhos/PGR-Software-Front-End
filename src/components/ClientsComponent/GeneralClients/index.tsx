@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TableComponent from "../../common/Tables";
 import NormalSearchInput from "../../common/Inputs/NormalSearchInput";
 import styles from "./style.module.css";
@@ -8,6 +8,26 @@ import ButtonClean from "../../common/Buttons/ButtonClean";
 import Link from "next/link";
 
 export default function ClientsComponent() {
+    
+
+    const [clients, setClients] = useState([
+        ["001", "00.000.000/0000-00", "Joaquim"],
+        ["002", "00.000.000/0000-00", "Joaquim"],
+        ["003", "00.000.000/0000-00", "Joaquim"],
+        ["004", "00.000.000/0000-00", "Joaquim"],
+        ["005", "00.000.000/0000-00", "Joaquim"],
+        ["006", "00.000.000/0000-00", "Joaquim"],
+        ["007", "00.000.000/0000-00", "Joaquim"],
+        ["008", "00.000.000/0000-00", "Joaquim"],
+        ["009", "00.000.000/0000-00", "Joaquim"],
+        ["0010", "00.000.000/0000-00", "Joaquim"],
+        ["0011", "00.000.000/0000-00", "Joaquim"],
+        ["0012", "00.000.000/0000-00", "Joaquim"],
+        ["0013", "00.000.000/0000-00", "Joaquim"],
+        
+
+
+    ])
     return (
         <div>
             <div className={styles.mainContainerOptions}>
@@ -39,12 +59,7 @@ export default function ClientsComponent() {
             <TableComponent
                 dataTable={{
                     tHeadData: ["CNPJ", "Nome"],
-                    tBodyData: [
-                        ["00.000.000/0000-00", "Joaquim"],
-                        ["00.000.000/0000-00", "Joaquim"],
-                        ["00.000.000/0000-00", "Joaquim"],
-                    ],
-                    idsData: ["000aa1", "000aa2", "000aa3"],
+                    tBodyData: clients,
                    
                 }}
             />
