@@ -20,7 +20,7 @@ export default function InitialPageLaudos() {
                 <ButtonSearch type="button" />
                 <ButtonClean type="button" />
             </div>
-            
+
 
             <TableComponent dataTable={{ tHeadData: ["Inclusão", "Nome", "Cliente", "Status"], tBodyData: [["0001", "01/01/2025 08:00", "Nome Genérico", "Cliente Genérico", "Ativo/Expirado"]] }} />
         </>

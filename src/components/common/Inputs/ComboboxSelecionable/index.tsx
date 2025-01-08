@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent } from "react";
-import { FormGroup, Input, Button, Form } from "reactstrap";
+import { FormGroup, Form } from "reactstrap";
 import Select, { StylesConfig } from "react-select";
 import makeAnimated from "react-select/animated";
 import styles from "./style.module.css";
@@ -14,8 +14,9 @@ interface Props {
   selectValue?: string;
   selectOnChange?: (event: any) => void;
   required?: boolean;
-  options?: string[];
-  width?: string
+  options?: any[];
+  width?: string;
+  maxWidth?: string;
 }
 
 const customStyles: StylesConfig = {
@@ -44,7 +45,8 @@ const SearchEquipamentoComponent = ({
   selectValue,
   selectOnChange,
   required,
-  width
+  width,
+  maxWidth
 }: Props) => {
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -52,7 +54,7 @@ const SearchEquipamentoComponent = ({
   };
 
   return (
-    <Form onSubmit={handleSearch} style={{width}}>
+    <Form onSubmit={handleSearch} style={{ width, maxWidth }}>
       <FormGroup className={styles.formGroupContent}>
         <Select
           styles={customStyles}
