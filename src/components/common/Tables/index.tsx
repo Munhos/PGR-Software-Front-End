@@ -13,9 +13,10 @@ interface TableComponentProps {
         tHeadData: string[];
         tBodyData: string[][];
     };
+    route?: string;
 }
 
-const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
+const TableComponent: React.FC<TableComponentProps> = ({ dataTable, route }) => {
     const [openPopoverId, setOpenPopoverId] = useState<string | null>(null);
     const [formatedData, setFormatedData] = useState<any[]>([]);
     const [atualPage, setAtualPage] = useState(1);
@@ -29,7 +30,7 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
     };
 
 
-    const renderPopover = (id: string) => {
+    const renderPopover = (id: any) => {
         return (
             <Popover id={`popover-actions-${id}`} className="popover-actions">
                 <Popover.Body>
@@ -141,46 +142,60 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable }) => {
                     {formatedData.length > 0 &&
                         formatedData[atualPage - 1]?.map((row: any, pageIndex: any) => (
                             <tr key={pageIndex}>
-                                {
-                                    row.slice(1).map((item: any, index: any) => (
-                                        <td
-                                            key={index}
-                                            className="text-start"
-                                            style={{
-                                                width: `calc(100% / ${row.length - 1})`,
-                                                wordBreak: "break-word",
-                                            }}
-                                        >
-                                            {item}
-                                        </td>
-                                    ))
-                                }
+                                {row.slice(1).map((item: any, index: any) => (
+                                    <td
+                                        key={index}
+                                        className="text-start"
+                                        style={{
+                                            width: `calc(100% / ${row.length - 1})`,
+                                            wordBreak: "break-word",
+                                        }}
+                                    >
+                                        {item}
+                                    </td>
+                                ))}
                                 <td className="text-end">
-                                    {
-                                        currentPage == "/laudos" ? (
-                                            <div style={{ display: "flex", justifyContent: "flex-end", gap: "15px", alignItems: "center" }}>
+                                    {(() => {
+                                        const data = {
+                                            id: String(row[0]), 
+                                            route: route || "",
+                                        };
+
+                                        return currentPage === "/laudos" ? (
+                                            <div
+                                                style={{
+                                                    display: "flex",
+                                                    justifyContent: "flex-end",
+                                                    gap: "15px",
+                                                    alignItems: "center",
+                                                }}
+                                            >
                                                 <ButtonDownload type="button" />
-                                                <ButtonDeleteTable idData={row[0]} />
+                                                <ButtonDeleteTable idData={data} />
                                             </div>
                                         ) : (
                                             <OverlayTrigger
                                                 trigger="click"
                                                 placement="top"
-                                                overlay={renderPopover(row[0])}
+                                                overlay={renderPopover(data)}
                                                 show={openPopoverId === row[0]}
                                                 onToggle={() => handleTogglePopover(row[0])}
                                             >
                                                 <button className="btn btn-link">
-                                                    <i style={{ color: "var(--green02)" }} className="bi bi-three-dots"></i>
+                                                    <i
+                                                        style={{ color: "var(--green02)" }}
+                                                        className="bi bi-three-dots"
+                                                    ></i>
                                                 </button>
                                             </OverlayTrigger>
-                                        )
-                                    }
-
+                                        );
+                                    })()}
                                 </td>
                             </tr>
                         ))}
                 </tbody>
+
+
             </table>
 
             <nav aria-label="Page navigation example">

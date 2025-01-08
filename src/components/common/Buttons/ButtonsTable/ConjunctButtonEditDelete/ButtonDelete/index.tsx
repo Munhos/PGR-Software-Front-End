@@ -1,7 +1,10 @@
 import React from "react";
 
 interface ButtonEditTableProps {
-    idData: string;
+    idData: {
+        id: string;
+        route: string;
+    };
 }
 
 export default function ButtonDeleteTable({ idData }: ButtonEditTableProps) {

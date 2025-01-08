@@ -60,8 +60,8 @@ export default function ClientsComponent() {
                 dataTable={{
                     tHeadData: ["CNPJ", "Nome"],
                     tBodyData: clients,
-                   
                 }}
+                route="/clientes/editarcliente/"
             />
         </div>
     );

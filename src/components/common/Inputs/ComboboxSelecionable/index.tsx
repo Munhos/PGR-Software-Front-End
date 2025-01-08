@@ -1,5 +1,4 @@
 import { ChangeEvent, FormEvent } from "react";
-import { BsSearch } from "react-icons/bs";
 import { FormGroup, Input, Button, Form } from "reactstrap";
 import Select, { StylesConfig } from "react-select";
 import makeAnimated from "react-select/animated";
@@ -16,6 +15,7 @@ interface Props {
   selectOnChange?: (event: any) => void;
   required?: boolean;
   options?: string[];
+  width?: string
 }
 
 const customStyles: StylesConfig = {
@@ -44,6 +44,7 @@ const SearchEquipamentoComponent = ({
   selectValue,
   selectOnChange,
   required,
+  width
 }: Props) => {
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -51,7 +52,7 @@ const SearchEquipamentoComponent = ({
   };
 
   return (
-    <Form onSubmit={handleSearch}>
+    <Form onSubmit={handleSearch} style={{width}}>
       <FormGroup className={styles.formGroupContent}>
         <Select
           styles={customStyles}

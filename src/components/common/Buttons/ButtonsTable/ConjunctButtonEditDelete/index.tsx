@@ -4,7 +4,10 @@ import ButtonEditTable from "./ButtonEdit";
 import styles from "./style.module.css"
 
 interface ButtonEditTableProps {
-    idData: string
+    idData: {
+        id: string;
+        route: string;
+    };
 }
 
 export default function ConjunctButtonEditDelete({idData}: ButtonEditTableProps) {
