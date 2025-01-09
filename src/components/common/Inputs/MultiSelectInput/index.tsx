@@ -8,14 +8,22 @@ interface MultiSelectInputProps {
 }
 
 export default function MultiSelectInput({ options, placeHolder, className }: MultiSelectInputProps) {
+    const customStyles = {
+        menu: (provided: any) => ({
+            ...provided,
+            zIndex: 9999,
+        }),
+    };
+
     return (
         <Select
             isMulti
             name="multi-select"
             options={options}
             placeholder={placeHolder}
-            className={`${className} basic-multi-select`} // Passando className corretamente
+            className={`${className} basic-multi-select`}
             classNamePrefix="select"
+            styles={customStyles}
         />
     );
 }

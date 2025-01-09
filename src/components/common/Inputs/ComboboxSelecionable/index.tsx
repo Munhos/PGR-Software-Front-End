@@ -17,6 +17,7 @@ interface Props {
   options?: any[];
   width?: string;
   maxWidth?: string;
+  minWidth?: string;
 }
 
 const customStyles: StylesConfig = {
@@ -46,7 +47,8 @@ const SearchEquipamentoComponent = ({
   selectOnChange,
   required,
   width,
-  maxWidth
+  maxWidth,
+  minWidth
 }: Props) => {
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -54,7 +56,7 @@ const SearchEquipamentoComponent = ({
   };
 
   return (
-    <Form onSubmit={handleSearch} style={{ width, maxWidth }}>
+    <Form onSubmit={handleSearch} style={{ width, maxWidth, minWidth }}>
       <FormGroup className={styles.formGroupContent}>
         <Select
           styles={customStyles}

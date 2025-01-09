@@ -35,6 +35,7 @@ export default function InitialPageServicos() {
                     tHeadData: ["Descrição", "Dt de Início", "Dt de Fim"],
                     tBodyData: [["001", "Descrição teste", "01/01/2025", "02/02/2025"]]
                 }}
+                route = "/servico/editarservico/"
             />
         </>
     );

@@ -4,14 +4,15 @@ import styles from "./style.module.css";
 interface SelecionableSearchInputProps {
     width: string;
     value: string[];
-    placeHolder: string
+    placeHolder: string;
+    height?: string;
 }
 
-export default function SelecionableSearchInput({value, width, placeHolder}: SelecionableSearchInputProps) {
+export default function SelecionableSearchInput({value, width, placeHolder, height}: SelecionableSearchInputProps) {
     return (
         <div style={{width}}>
-            <select className={`${styles.select} form-select`} name="" id="">
-                <option selected>{placeHolder}</option>
+            <select style={{height}} className={`${styles.select} form-select`} name="" id="">
+                <option disabled selected>{placeHolder}</option>
                 {
                     value.map((e, index) => (
                         <option value={e} key={index}>{e}</option>

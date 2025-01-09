@@ -27,7 +27,8 @@ function MyApp({ Component, pageProps }:any) {
 
   return (
     <>
-      {loading ? <LoadingIndicator /> : <Component {...pageProps} />}
+      {/* {loading ? <LoadingIndicator /> : <Component {...pageProps} />} */}
+      <Component {...pageProps} />
     </>
   );
 }

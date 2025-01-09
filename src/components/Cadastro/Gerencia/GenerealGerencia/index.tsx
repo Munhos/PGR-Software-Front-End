@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 import ButtonSearch from "@/components/common/Buttons/ButtonSearch";
 import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
 import ButtonClean from "@/components/common/Buttons/ButtonClean";
+import Link from "next/link";
 
 export default function GerenciaComponent() {
     return (
@@ -17,19 +18,22 @@ export default function GerenciaComponent() {
                         placeHolder="Descrição"
                     />
 
-                    <ButtonSearch 
+                    <ButtonSearch
                         type="button"
                     />
 
-                    <ButtonClean 
+                    <ButtonClean
                         type="button"
                     />
 
                 </div>
 
-                <ButtonAdd 
+                <Link href="/gerencia/novagerencia">
+                    <ButtonAdd
                         type="button"
                     />
+                </Link>
+
 
             </div>
             <TableComponent
@@ -41,6 +45,8 @@ export default function GerenciaComponent() {
                         ["003", "Gerência de Engenharia"]
                     ]
                 }}
+
+                route="/gerencia/editargerencia/"
             />
         </div>
     );
