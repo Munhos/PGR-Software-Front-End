@@ -76,9 +76,10 @@ export default function SideMenu() {
                 icone="bi bi-person-circle"
                 name="Configurações"
                 options={[
-                    { name: "Option 1", url: "option1" },
-                    { name: "Option 2", url: "option2" },
-                    { name: "Option 3", url: "option3" }
+                    { name: "Engenheiro", url: "/engenheiro" },
+                    { name: "Empresa", url: "/empresa" },
+                    { name: "Trabalhador", url: "/trabalhador" },
+                    { name: "Usuários", url: "/usuarios" },
                 ]}
                 isOpen={openDropdown === "Configurações"}
                 onToggle={() => handleDropdownToggle("Configurações")}
@@ -89,9 +90,8 @@ export default function SideMenu() {
                 icone="bi bi-person-circle"
                 name="Financeiro"
                 options={[
-                    { name: "Option 1", url: "option1" },
-                    { name: "Option 2", url: "option2" },
-                    { name: "Option 3", url: "option3" }
+                    { name: "Assinaturas", url: "/assinaturas" },
+                    { name: "Indicações", url: "/indicacoes" },
                 ]}
                 isOpen={openDropdown === "Financeiro"}
                 onToggle={() => handleDropdownToggle("Financeiro")}

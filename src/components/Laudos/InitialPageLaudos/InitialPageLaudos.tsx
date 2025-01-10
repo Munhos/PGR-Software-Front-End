@@ -6,16 +6,18 @@ import ButtonClean from "@/components/common/Buttons/ButtonClean";
 
 import styles from "./style.module.css";
 import TableComponent from "@/components/common/Tables";
+import SearchEquipamentoComponent from "@/components/common/Inputs/ComboboxSelecionable";
 
 export default function InitialPageLaudos() {
     return (
         <>
             <div className={styles.containerSeachOptions}>
                 <NormalSearchInput width="20%" placeHolder="Laudos" />
-                <SimpleInputSelect width="20%" options={["SEARA",
-                    "JBS",
-                    "Santa Terezinha",
-                    "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA"]}
+                <SearchEquipamentoComponent width="20%" options={[{ label: "SEARA", value: "SEARA" },
+                { label: "JBS", value: "JBS" },
+                { label: "Santa Terezinha", value: "Santa Terezinha" },
+                { label: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA", value: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA" }
+                ]}
                     placeholder="Selecione um Cliente" />
                 <ButtonSearch type="button" />
                 <ButtonClean type="button" />

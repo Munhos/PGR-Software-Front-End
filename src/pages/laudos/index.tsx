@@ -6,7 +6,7 @@ export default function servico() {
     return (
         <>
             <ModelPage
-                urlAnterior={{ name: "Laudos", url: "/" }}
+                urlAnterior={{ name: "Laudos Gerados", url: "/" }}
                 content={<InitialPageLaudos />}
             />
         </>

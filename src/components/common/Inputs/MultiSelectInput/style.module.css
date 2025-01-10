@@ -1,0 +1,12 @@
+/* Estilo quando o foco está no Select */
+.select__control--is-focused + .pPlaceholder {
+    transform: scale(0.8);
+    top: 5px; /* Ajuste de posição para a escala */
+    left: 10px; /* Ajuste adicional */
+    transition: transform 0.2s ease, top 0.2s ease, left 0.2s ease;
+
+}
+
+.select {
+    padding-top: 10px;
+}

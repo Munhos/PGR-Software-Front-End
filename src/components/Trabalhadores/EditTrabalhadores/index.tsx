@@ -11,7 +11,7 @@ export default function EditTrabalhador() {
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <WriteInput label="Código" content="" width="20%" placeHolder="Código" />
                     <WriteInput label="Nome" content="" width="50%" placeHolder="Nome" />
-                    <SelecionableSearchInput value={["Masculino", "Feminino", "Outro"]} height="60px" width="30%" placeHolder="Gênero" />
+                    <SelecionableSearchInput value={["Masculino", "Feminino"]} height="60px" width="30%" placeHolder="Gênero" />
                 </div>
                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <WriteInput label="Data de Nascimento" content="" width="33.3%" placeHolder="Data de Nascimento" />
