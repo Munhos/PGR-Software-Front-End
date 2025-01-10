@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 import ButtonSearch from "@/components/common/Buttons/ButtonSearch";
 import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
 import ButtonClean from "@/components/common/Buttons/ButtonClean";
+import Link from "next/link";
 
 export default function SetorComponent() {
     return (
@@ -27,9 +28,11 @@ export default function SetorComponent() {
 
                 </div>
 
-                <ButtonAdd 
+                <Link href="/cadastro/setor/novosetor">
+                    <ButtonAdd
                         type="button"
                     />
+                </Link>
 
             </div>
             <TableComponent
@@ -41,6 +44,8 @@ export default function SetorComponent() {
                         ["003", "Manutenção Mecânica"]
                     ],
                 }}
+
+                route="/cadastro/setor/editarsetor/"
             />
         </div>
     );
