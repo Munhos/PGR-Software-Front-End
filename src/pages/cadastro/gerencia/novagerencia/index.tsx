@@ -6,7 +6,7 @@ export default function newgerencia() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Nova Gerência", url: "/gerencia" }}
+                urlAnterior={{ name: "Nova Gerência", url: "/cadastro/gerencia" }}
                 content={<NewGerencia />}
             />
             

@@ -7,7 +7,7 @@ export default function cargo() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Cargo", url: "/cargo" }}
+                urlAnterior={{ name: "Cargo", url: "/cadastro/cargo" }}
                 content={<CargoComponent />}
             />
         </div>

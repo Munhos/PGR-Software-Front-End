@@ -5,43 +5,35 @@ import styles from "./style.module.css";
 import ButtonSearch from "@/components/common/Buttons/ButtonSearch";
 import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
 import ButtonClean from "@/components/common/Buttons/ButtonClean";
+import Link from "next/link";
 
 export default function PgrTypeComponent() {
-    return (
-        <div>
-            <div className={styles.mainContainerOptions}>
-                <div className={styles.containerOptions}>
+  return (
+    <div>
+      <div className={styles.mainContainerOptions}>
+        <div className={styles.containerOptions}>
+          <NormalSearchInput width="300px" placeHolder="Descrição" />
 
-                    <NormalSearchInput
-                        width="300px"
-                        placeHolder="Descrição"
-                    />
+          <ButtonSearch type="button" />
 
-                    <ButtonSearch 
-                        type="button"
-                    />
-
-                    <ButtonClean 
-                        type="button"
-                    />
-
-                </div>
-
-                <ButtonAdd 
-                        type="button"
-                    />
-
-            </div>
-            <TableComponent
-                dataTable={{
-                    tHeadData: ["Descrição"],
-                    tBodyData: [
-                        ["001", "PGR"],
-                        ["002", "PGRTR"],
-                        ["003", "PGRMIN"]
-                    ]
-                }}
-            />
+          <ButtonClean type="button" />
         </div>
-    );
+
+        <Link href="/cadastro/tipopgr/novotipopgr">
+          <ButtonAdd type="button" />
+        </Link>
+      </div>
+      <TableComponent
+        dataTable={{
+          tHeadData: ["Descrição"],
+          tBodyData: [
+            ["001", "PGR"],
+            ["002", "PGRTR"],
+            ["003", "PGRMIN"],
+          ],
+        }}
+        route="/cadastro/tipopgr/editartipopgr/"
+      />
+    </div>
+  );
 }

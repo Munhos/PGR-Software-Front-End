@@ -6,7 +6,7 @@ export default function newpgrtype() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Tipo PGR", url: "/tipopgr" }}
+                urlAnterior={{ name: "Novo Tipo PGR", url: "/cadastro/tipopgr" }}
                 content={<NewPgrType />}
             />
             
