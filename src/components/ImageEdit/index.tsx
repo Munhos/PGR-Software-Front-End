@@ -1,6 +1,7 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import styles from "./styles.module.css";
+import ButtonSave from "../common/Buttons/ButtonSave";
 
 const Editor = dynamic(() => import("./WrappedEditor"), { ssr: false });
 
@@ -10,14 +11,21 @@ const EditorWithForwardedRef = forwardRef((props, ref) => (
 
 const myTheme = {
   "header.display": "none",
-  // "common.bisize.width": "0",
-  // "common.bisize.height": "0",
-  // "downloadButton.display": "none",
-  // "loadButton.display": "none",
 };
 
-const TuiImageEditor = (props:any) => {
-  const { image, editorRef, onSave, isLoading, onCancel } = props;
+const TuiImageEditor = (props: any) => {
+  const { image, onSave } = props;
+  const editorRef = useRef<{ getInstance: () => any } | null>(null);
+
+  useEffect(() => {
+    // Recarrega a imagem no editor quando `image` muda
+    if (editorRef.current && image) {
+      const editorInstance = editorRef.current.getInstance();
+      editorInstance.loadImageFromURL(image, "Nova Imagem").catch((err: any) => {
+        console.error("Erro ao carregar a imagem:", err);
+      });
+    }
+  }, [image]);
 
   return (
     <div className={styles.editor}>
@@ -29,20 +37,11 @@ const TuiImageEditor = (props:any) => {
             name: "image",
           },
           theme: myTheme,
-          menu: [
-            "shape",
-            "text",
-            "mask",
-            "icon",
-            "draw",
-            "crop",
-            "flip",
-            "rotate",
-          ],
+          menu: ["shape", "text", "mask", "icon", "draw", "crop", "flip", "rotate"],
           initMenu: "icon",
           uiSize: {
             width: "1000px",
-            height: "500px",
+            height: "700px",
           },
           menuBarPosition: "bottom",
         }}
@@ -55,7 +54,17 @@ const TuiImageEditor = (props:any) => {
         usageStatistics={false}
         ref={editorRef}
       />
-      
+      <div
+        style={{
+          marginTop: "10px",
+          display: "flex",
+          justifyContent: "flex-end",
+          width: "100%",
+          marginBottom: "10px",
+        }}
+      >
+        <ButtonSave />
+      </div>
     </div>
   );
 };
