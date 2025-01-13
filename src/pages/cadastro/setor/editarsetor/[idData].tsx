@@ -2,7 +2,7 @@ import React from "react";
 import ModelPage from "@/components/common/ModelPage";
 import EditSetor from "@/components/Cadastro/Setor/EditSetor";
 
-export default function setor() {
+export default function editsetor() {
     
     return (
         <div>

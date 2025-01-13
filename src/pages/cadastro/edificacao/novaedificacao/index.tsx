@@ -1,5 +1,5 @@
 import React from "react";
-import NewEdificacao from "@/components/Cadastro/Edificacao/newEdification";
+import NewEdificacao from "@/components/Cadastro/Edificacao/newEdificacao";
 import ModelPage from "@/components/common/ModelPage";
 
 export default function newedificacao() {

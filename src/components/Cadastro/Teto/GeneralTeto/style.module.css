@@ -1,0 +1,11 @@
+.mainContainerOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.containerOptions {
+    display: flex;
+    gap: 15px;
+}

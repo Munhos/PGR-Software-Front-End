@@ -7,7 +7,7 @@ export default function newcargo() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Cargo", url: "/novocargo" }}
+                urlAnterior={{ name: "Novo Cargo", url: "/cadastro/cargo" }}
                 content={<NewCargo />}
             />
             

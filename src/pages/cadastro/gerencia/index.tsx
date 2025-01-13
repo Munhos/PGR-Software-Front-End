@@ -1,6 +1,6 @@
 import React from "react";
 import ModelPage from "@/components/common/ModelPage";
-import GerenciaComponent from "@/components/Cadastro/Gerencia/GenerealGerencia";
+import GerenciaComponent from "@/components/Cadastro/Gerencia/GeneralGerencia";
 
 export default function gerencia() {
     

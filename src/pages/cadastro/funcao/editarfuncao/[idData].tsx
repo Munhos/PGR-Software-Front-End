@@ -2,7 +2,7 @@ import React from "react";
 import ModelPage from "@/components/common/ModelPage";
 import EditFuncao from "@/components/Cadastro/Funcao/EditFuncao";
 
-export default function funcao() {
+export default function editfuncao() {
     
     return (
         <div>

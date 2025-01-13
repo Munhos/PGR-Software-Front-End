@@ -1,6 +1,6 @@
 import React from "react";
 import ModelPage from "@/components/common/ModelPage";
-import GerenciaComponent from "@/components/Cadastro/Gerencia/GenerealGerencia";
+import GerenciaComponent from "@/components/Cadastro/Gerencia/GeneralGerencia";
 import InitialPageGes from "@/components/Ges/InitialPage";
 import NewPageGes from "@/components/Ges/NewPageGes";
 

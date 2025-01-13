@@ -2,7 +2,7 @@ import React from "react";
 import ModelPage from "@/components/common/ModelPage";
 import EditTipoPgr from "@/components/Cadastro/TipoPgr/EditSetor";
 
-export default function tipopgr() {
+export default function edittipopgr() {
     
     return (
         <div>
