@@ -30,7 +30,7 @@ export default function TetoComponent() {
 
                 <Link href="/cadastro/teto/novoteto">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Teto"
                     />
                 </Link>
 

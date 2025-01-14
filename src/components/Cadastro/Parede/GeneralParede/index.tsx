@@ -30,7 +30,7 @@ export default function ParedeComponent() {
 
                 <Link href="/cadastro/parede/novaparede">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Nova Parede"
                     />
                 </Link>
 

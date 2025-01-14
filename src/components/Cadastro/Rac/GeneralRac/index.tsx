@@ -30,7 +30,7 @@ export default function RacComponent() {
 
                 <Link href="/cadastro/rac/novorac/">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo RAC"
                     />
                 </Link>
 

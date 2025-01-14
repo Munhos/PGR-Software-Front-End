@@ -50,7 +50,7 @@ export default function ClientsComponent() {
 
                 <Link href="/clientes/novocliente">
                 <ButtonAdd 
-                        type="button"
+                        title="Cadastro de Novo Cliente"
                     />
                 </Link>
                 

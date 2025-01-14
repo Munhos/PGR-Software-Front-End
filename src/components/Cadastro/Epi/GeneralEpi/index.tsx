@@ -30,7 +30,7 @@ export default function EpiComponent() {
 
                 <Link href="/cadastro/epi/novoepi">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo EPI"
                     />
                 </Link>
 

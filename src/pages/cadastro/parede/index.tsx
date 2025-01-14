@@ -7,7 +7,7 @@ export default function parede() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Gerência", url: "/" }}
+                urlAnterior={{ name: "Parede", url: "/ges/ambientedetrabalho/adicionar" }}
                 content={<ParedeComponent />}
             />
         </div>

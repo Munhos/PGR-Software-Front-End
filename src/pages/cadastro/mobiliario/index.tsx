@@ -7,7 +7,7 @@ export default function mobiliario() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Mobiliário", url: "/" }}
+                urlAnterior={{ name: "Mobiliário", url: "/ges/ambientedetrabalho/adicionar" }}
                 content={<MobiliarioComponent />}
             />
         </div>

@@ -17,28 +17,28 @@ export default function AddAmbienteDeTrabalho() {
         <div style={{ display: "flex", gap: "10px" }}>
           <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Tipo de edificação" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/edificacao" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Tipo de Edificação" />
             </Link>
           </div>
           <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Teto" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/teto" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Teto" />
             </Link>
           </div>
         </div>
         <div style={{ display: "flex", gap: "10px" }}>
           <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Parede" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/parede" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Parede" />
             </Link>
           </div>
           <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Ventilação" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/ventilacao" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Ventilação" />
             </Link>
           </div>
         </div>
@@ -49,22 +49,22 @@ export default function AddAmbienteDeTrabalho() {
         <div style={{ display: "flex", gap: "10px" }}>
         <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Iluminação" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/iluminacao" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Iluminação" />
             </Link>
           </div>
           <div style={{ width: "50%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Mobiliarios" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/mobiliario" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Mobiliarios" />
             </Link>
           </div>
         </div>
         <div style={{ display: "flex" }}>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
             <SelecionableSearchInput value={["1", "2", "3"]} height="60px" width="100%" placeHolder="Equipamentos" />
-            <Link href="/" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <ButtonAdd type="button" />
+            <Link href="/cadastro/equipamento" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <ButtonAdd title="Cadastro de Equipamentos" />
             </Link>
           </div>
         </div>

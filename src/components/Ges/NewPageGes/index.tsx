@@ -17,23 +17,32 @@ export default function NewPageGes() {
                         <WriteInput label="Descrição GES" content="" width="70%" placeHolder="Descrição GES" />
                     </div>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="32.5%" placeHolder="Req. Ativ. Crítica (RAC)" />
-                        <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="32.5%" placeHolder="Cursos Obrigatórios" />
-                        <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="32.5%" placeHolder="EPI Obrigatório" />
+                        <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>
+                            <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="Req. Ativ. Crítica (RAC)" />
+                            <ButtonAdd title="Cadastro de Req. Ativ. Crítica (RAC)" />
+                        </div>
+                        <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>       
+                            <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="Cursos Obrigatórios" />
+                            <ButtonAdd title="Cadastro de Cursos Obrigatórios" />
+                        </div>
+                        <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>         
+                            <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="EPI Obrigatório" />
+                            <ButtonAdd title="Cadastro de EPI Obrigatório" />
+                        </div>
                     </div>
                     <div style={{ display: "flex" }}>
                         <WriteInput label="Observação" content="" width="100%" placeHolder="Observação" />
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <WriteInput label="Caracterização dos Processos" content="" width="100%" placeHolder="Caracterização dos Processos" />
-                        <Link href="/">
-                            <ButtonAdd type="button" />
+                        <Link href="/ges/processos/adicionar">
+                            <ButtonAdd title="Cadastro de Caracterização de Processos" />
                         </Link>
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <WriteInput label="Caracterização dos Ambientes de Trabalho" content="" width="100%" placeHolder="Caracterização dos Ambientes de Trabalho" />
-                        <Link href="/">
-                            <ButtonAdd type="button" />
+                        <Link href="/ges/ambientedetrabalho/adicionar">
+                            <ButtonAdd title="Cadastro de Caracterirazação dos Ambientes de Trabalho" />
                         </Link>
                     </div>
                     <div style={{ display: "flex" }}>
@@ -41,22 +50,25 @@ export default function NewPageGes() {
                         <WriteInput label="Cargo" content="" width="50%" placeHolder="Cargo" />
                     </div>
                     <div style={{ display: "flex" }}>
-                        <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="100%" placeHolder="Tipo PGR" />
+                        <div style={{width: "100%", display: "flex", alignItems: "center", gap: "10px" }}>
+                            <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="100%" placeHolder="Tipo PGR" />
+                            <ButtonAdd title="Cadastro de Tipo PGR" />
+                        </div>
                     </div>
-                    <div style={{ display: "flex", gap:"15px", alignItems:"center" }}>
+                    <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
                         <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="100%" placeHolder="Trabalhadores" />
-                        <ButtonAdd type="button" />
+                        <ButtonAdd title="Cadastro de Trabalhadores" />
                     </div>
                 </div>
 
                 <TableComponent
-                dataTable={{
-                    tHeadData: ["Código", "Nome", "Cargo"],
-                    tBodyData: [["001", "001", "Jorge", "Desenvolvedor"], ["002", "002", "Jorge", "Desenvolvedor"]]
-                }}
+                    dataTable={{
+                        tHeadData: ["Código", "Nome", "Cargo"],
+                        tBodyData: [["001", "001", "Jorge", "Desenvolvedor"], ["002", "002", "Jorge", "Desenvolvedor"]]
+                    }}
 
-                route="/trabalhadores/editartrabalhador/"
-            />
+                    route="/trabalhadores/editartrabalhador/"
+                />
             </div>
         </>
     )

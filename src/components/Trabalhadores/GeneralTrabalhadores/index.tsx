@@ -26,7 +26,7 @@ export default function InitialPageTrabalhadores() {
                 />                <div style={{ marginLeft: "15px" }}>
 
                  <Link href="/trabalhadores/novotrabalhador">
-                    <ButtonAdd type="button" />
+                    <ButtonAdd title="Cadastro de Trabalhador" />
                  </Link>   
                 </div>
             </div>

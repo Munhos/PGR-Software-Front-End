@@ -30,7 +30,7 @@ export default function MobiliarioComponent() {
 
                 <Link href="/cadastro/mobiliario/novomobiliario">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Mobiliário"
                     />
                 </Link>
 

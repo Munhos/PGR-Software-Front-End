@@ -20,7 +20,7 @@ export default function PgrTypeComponent() {
         </div>
 
         <Link href="/cadastro/tipopgr/novotipopgr">
-          <ButtonAdd type="button" />
+          <ButtonAdd title="Cadastro de Novo Tipo PGR" />
         </Link>
       </div>
       <TableComponent

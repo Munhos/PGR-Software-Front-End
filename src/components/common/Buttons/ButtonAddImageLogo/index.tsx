@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 
 interface ButtonAddProps {
-    type: string;
+    name: string;
 }
 
-export default function ButtonAddImage({ type }: ButtonAddProps) {
+export default function ButtonAddImage({ name }: ButtonAddProps) {
     const [image, setImage] = useState<File | null>(null);
 
     // Função para lidar com a seleção de arquivos
@@ -43,7 +43,7 @@ export default function ButtonAddImage({ type }: ButtonAddProps) {
                         <i className={`bi bi-plus ${styles.iconAdd}`}></i>
                     </label>
 
-                    <h6>Adicionar Logo</h6>
+                    <h6>{name}</h6>
                 </>
             )}
 

@@ -30,7 +30,7 @@ export default function PisoComponent() {
 
                 <Link href="/cadastro/piso/novopiso">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Piso"
                     />
                 </Link>
 

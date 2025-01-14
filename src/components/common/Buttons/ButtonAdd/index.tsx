@@ -4,12 +4,12 @@ import styles from "./style.module.css"; // Importa o arquivo de estilo
 import "bootstrap-icons/font/bootstrap-icons.css"; // Importa o CSS dos ícones
 
 interface ButtonAddProps {
-  type: string;
+  title: string;
 }
 
-export default function ButtonAdd({ type }: ButtonAddProps) {
+export default function ButtonAdd({ title }: ButtonAddProps) {
   return (
-    <div className={`${styles.buttonAddContainer}`}>
+    <div title={title} className={`${styles.buttonAddContainer}`}>
       <i className={`bi bi-plus ${styles.iconAdd}`}></i>
     </div>
   );

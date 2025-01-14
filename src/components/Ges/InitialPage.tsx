@@ -17,7 +17,7 @@ export default function InitialPageGes() {
                 </div>
 
                 <Link href="/ges/novoges">
-                    <ButtonAdd type="button" />
+                    <ButtonAdd title="Cadastro de GES" />
                 </Link>
             </div>
 
@@ -29,6 +29,7 @@ export default function InitialPageGes() {
                                 ["0003", "0003", "Engenheiro Mecânico"],
                                 ["0004", "0004", "Engenheiro Mecânico"],]
                 }}
+                route="/ges/editarges/"
             />
         </div>
     );
