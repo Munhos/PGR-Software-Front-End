@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./style.module.css";
+import Link from "next/link";
 
 interface ButtonSearchInitialPageProps {
   url: string;
@@ -25,7 +26,10 @@ export default function ButtonSearchInitialPage({
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
       setDropdownOpen(false); // Fecha o dropdown
     }
   };
@@ -38,27 +42,31 @@ export default function ButtonSearchInitialPage({
   }, []);
 
   return (
-    <div ref={dropdownRef} className={`${styles.buttonSearchInitialPageContainer}`}>
+    <Link href={url}>
       <div
-        className={`${styles.buttonWithDropdown}`}
-        onClick={dropdownItems ? toggleDropdown : undefined}
+        ref={dropdownRef}
+        className={`${styles.buttonSearchInitialPageContainer}`}
       >
-        <i className={`${icon} ${styles.iconPrincipal}`}></i>
-        <div className={styles.text}>{text}</div>
-        {dropdownItems && <i className={`${arrow} ${styles.iconSecundary}`}></i>}
-      </div>
-      {dropdownItems && isDropdownOpen && (
-        <div className={`${styles.dropdownMenu}`}>
-          {dropdownItems.map((item, index) => (
-            <a
-              key={index}
-              className={styles.dropdownItem}
-            >
-              {item}
-            </a>
-          ))}
+        <div
+          className={`${styles.buttonWithDropdown}`}
+          onClick={dropdownItems ? toggleDropdown : undefined}
+        >
+          <i className={`${icon} ${styles.iconPrincipal}`}></i>
+          <div className={styles.text}>{text}</div>
+          {dropdownItems && (
+            <i className={`${arrow} ${styles.iconSecundary}`}></i>
+          )}
         </div>
-      )}
-    </div>
+        {dropdownItems && isDropdownOpen && (
+          <div className={`${styles.dropdownMenu}`}>
+            {dropdownItems.map((item, index) => (
+              <a key={index} className={styles.dropdownItem}>
+                {item}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </Link>
   );
 }

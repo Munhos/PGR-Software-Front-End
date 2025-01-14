@@ -37,9 +37,9 @@ export default function InicialMenuComponent() {
       <div className={`${styles.InicialMenuComponent}`}>
         <div className={`${styles.containerPrimaryButtons}`}>
           <ButtonSearchInitialPage url="/servicos" icon="bi bi-person" arrow="" text="Serviços" />
-          <ButtonSearchInitialPage url="/servicos" icon="bi bi-person-vcard" arrow="" text="Trabalhadores" />
-          <ButtonSearchInitialPage url="/servicos" icon="bi bi-people" arrow="" text="GES" />
-          <ButtonSearchInitialPage url="/servicos" icon="bi bi-book" arrow="" text="Laudos" />
+          <ButtonSearchInitialPage url="/trabalhadores" icon="bi bi-person-vcard" arrow="" text="Trabalhadores" />
+          <ButtonSearchInitialPage url="/ges" icon="bi bi-people" arrow="" text="GES" />
+          <ButtonSearchInitialPage url="/laudos" icon="bi bi-book" arrow="" text="Laudos" />
           <ButtonSearchInitialPage
             url="/configuracoes"
             icon="bi bi-gear"
