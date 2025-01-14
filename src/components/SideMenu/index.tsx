@@ -94,6 +94,7 @@ export default function SideMenu() {
         texto="Cadastros"
         url="/cadastros"
         icone="bi bi-journal-plus"
+
         showSideMenu={showSideMenu}
       />
 
