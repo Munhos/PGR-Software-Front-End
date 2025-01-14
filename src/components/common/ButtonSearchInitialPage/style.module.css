@@ -84,3 +84,7 @@
     color: var(--white);
     cursor: pointer;
 }
+
+.link {
+    text-decoration: none;
+}

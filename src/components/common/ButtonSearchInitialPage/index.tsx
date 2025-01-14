@@ -42,7 +42,7 @@ export default function ButtonSearchInitialPage({
   }, []);
 
   return (
-    <Link href={url}>
+    <Link className={styles.link} href={url}>
       <div
         ref={dropdownRef}
         className={`${styles.buttonSearchInitialPageContainer}`}
