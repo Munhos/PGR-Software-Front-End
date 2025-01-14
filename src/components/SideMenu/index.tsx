@@ -92,8 +92,8 @@ export default function SideMenu() {
         showSideMenu={showSideMenu}
       />
       <ButtonNormal
-        texto="Cadastros"
-        url="/cadastros"
+        texto="Cadastro"
+        url="/cadastro"
         icone="bi bi-person-circle"
         showSideMenu={showSideMenu}
       />
