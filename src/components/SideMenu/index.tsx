@@ -51,41 +51,40 @@ export default function SideMenu() {
       )}
 
       <ButtonNormal
-        texto="Serviço"
+        texto="Serviços"
         url="/servico"
-        icone="bi bi-person-circle"
+        icone="bi bi-person"
         showSideMenu={showSideMenu}
       />
 
       <ButtonNormal
         texto="Trabalhadores"
         url="/trabalhadores"
-        icone="bi bi-person-circle"
+        icone="bi bi-person-vcard"
         showSideMenu={showSideMenu}
       />
 
       <ButtonNormal
         texto="GES"
         url="/ges"
-        icone="bi bi-person-circle"
+        icone="bi bi-people"
         showSideMenu={showSideMenu}
       />
 
       <ButtonNormal
         texto="Laudos"
         url="/laudos"
-        icone="bi bi-person-circle"
+        icone="bi bi-book"
         showSideMenu={showSideMenu}
       />
 
       <ButtonDropdown
-        icone="bi bi-person-circle"
+        icone="bi bi-gear"
         name="Configurações"
         options={[
           { name: "Engenheiro", url: "/engenheiro" },
           { name: "Empresa", url: "/empresa" },
-          { name: "Trabalhador", url: "/trabalhador" },
-          { name: "Usuários", url: "/usuarios" },
+          { name: "Usuários", url: "/configuracoes/usuarios" },
         ]}
         isOpen={openDropdown === "Configurações"}
         onToggle={() => handleDropdownToggle("Configurações")}
@@ -94,12 +93,12 @@ export default function SideMenu() {
       <ButtonNormal
         texto="Cadastros"
         url="/cadastros"
-        icone="bi bi-person-circle"
+        icone="bi bi-journal-plus"
         showSideMenu={showSideMenu}
       />
 
       <ButtonDropdown
-        icone="bi bi-person-circle"
+        icone="bi bi-coin"
         name="Financeiro"
         options={[
           { name: "Assinaturas", url: "/assinaturas" },
@@ -111,15 +110,20 @@ export default function SideMenu() {
       />
 
       <ButtonDropdown
-        icone="bi bi-person-circle"
+        icone="bi bi-file-earmark-lock"
         name="Administrador"
         options={[
-          { name: "Option 1", url: "option1" },
-          { name: "Option 2", url: "option2" },
-          { name: "Option 3", url: "option3" },
+          { name: "Empresa", url: "/administrador/empresa" },
         ]}
         isOpen={openDropdown === "Administrador"}
         onToggle={() => handleDropdownToggle("Administrador")}
+        showSideMenu={showSideMenu}
+      />
+
+      <ButtonNormal
+        texto="Inconsistências"
+        url="/inconsistencias"
+        icone="bi bi-newspaper"
         showSideMenu={showSideMenu}
       />
 
@@ -127,19 +131,10 @@ export default function SideMenu() {
         icone="bi bi-person-circle"
         name="Usuário"
         options={[
-          { name: "Option 1", url: "option1" },
-          { name: "Option 2", url: "option2" },
-          { name: "Option 3", url: "option3" },
+          { name: "Minha Conta", url: "option1" },
         ]}
         isOpen={openDropdown === "Usuário"}
         onToggle={() => handleDropdownToggle("Usuário")}
-        showSideMenu={showSideMenu}
-      />
-
-      <ButtonNormal
-        texto="Inconsistências"
-        url="/inconsistencias"
-        icone="bi bi-person-circle"
         showSideMenu={showSideMenu}
       />
 

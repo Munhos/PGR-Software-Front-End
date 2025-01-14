@@ -1,13 +1,13 @@
 import ModelPage from "@/components/common/ModelPage";
+import Usuarios from "@/components/configuracoes/Usuários";
 import InicialMenuComponent from "@/components/Home";
-import Suporte from "@/components/Suporte";
 
 export default function Home() {
   return (
     <div>
       <ModelPage
-        urlAnterior={{ name: "Suporte", url: "/" }}
-        content={ <Suporte /> }
+        urlAnterior={{ name: "Usuários", url: "/" }}
+        content={ <Usuarios /> }
       />
 
     </div>

@@ -14,12 +14,14 @@ export default function ButtonNormal({ texto, url, icone, showSideMenu }: Button
         <>
             {
                 showSideMenu ? (
-                    <div className={styles.buttonNormalContainer}>
+                    <Link className={`${styles.link} ${styles.buttonNormalContainer}`} href={url}>
+
                         <i className={`${icone} ${styles.iconPrincipal}`}></i>
                         <Link className={styles.link} href={url}>{texto}</Link>
-                    </div>
+
+                    </Link>
                 ) : (
-                    <i style={{margin:'10px'}} className={`${icone} ${styles.iconPrincipal}`}></i>
+                    <i style={{ margin: '10px' }} className={`${icone} ${styles.iconPrincipal}`}></i>
                 )
             }
         </>
