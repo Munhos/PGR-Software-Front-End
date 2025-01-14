@@ -30,7 +30,7 @@ export default function IluminacaoComponent() {
 
                 <Link href="/cadastro/iluminacao/novailuminacao">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Nova Iluminação"
                     />
                 </Link>
 

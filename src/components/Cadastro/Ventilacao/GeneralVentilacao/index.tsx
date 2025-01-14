@@ -20,7 +20,7 @@ export default function VentilacaoComponent() {
         </div>
 
         <Link href="/cadastro/ventilacao/novaventilacao">
-          <ButtonAdd type="button" />
+          <ButtonAdd title="Cadastro de Nova Ventilação" />
         </Link>
       </div>
       <TableComponent

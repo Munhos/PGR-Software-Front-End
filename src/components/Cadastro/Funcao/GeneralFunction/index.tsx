@@ -30,7 +30,7 @@ export default function FuncaoComponent() {
 
                 <Link href="/cadastro/funcao/novafuncao">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Nova Função"
                     />
                 </Link>
 

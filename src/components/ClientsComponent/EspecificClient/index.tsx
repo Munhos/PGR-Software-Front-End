@@ -73,7 +73,7 @@ export default function EspecificClient({
                 />
 
                 <div className={styles.divContainerInputs2}>
-                    <div><ButtonAddImage type="button" /></div>
+                    <div><ButtonAddImage name="Adicionar Logo" /></div>
                     <div><ButtonAddPDF type="button" /></div>
                     <div style={{ cursor: "pointer" }}><ButtonSave /></div>
                 </div>

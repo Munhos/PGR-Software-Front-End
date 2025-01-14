@@ -31,7 +31,7 @@ export default function CargoComponent() {
 
                 <Link href="/cadastro/cargo/novocargo">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Cargo"
                     />
                 </Link>
 

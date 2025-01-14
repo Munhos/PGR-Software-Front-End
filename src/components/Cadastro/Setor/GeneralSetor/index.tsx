@@ -30,7 +30,7 @@ export default function SetorComponent() {
 
                 <Link href="/cadastro/setor/novosetor">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Setor"
                     />
                 </Link>
 

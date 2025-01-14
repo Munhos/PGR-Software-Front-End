@@ -30,7 +30,7 @@ export default function EdificacaoComponent() {
 
                 <Link href="/cadastro/edificacao/novaedificacao/">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Nova Edificação"
                     />
                 </Link>
 

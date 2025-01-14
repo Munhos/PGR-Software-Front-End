@@ -26,7 +26,7 @@ export default function InitialPageServicos() {
                     />
                 </div>
                 <Link href="/servico/novoservico">
-                    <ButtonAdd type="button" />
+                    <ButtonAdd title="Cadastro de Novo Serviço" />
                 </Link>
             </div>
 

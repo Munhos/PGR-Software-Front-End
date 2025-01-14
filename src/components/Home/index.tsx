@@ -31,7 +31,7 @@ export default function InicialMenuComponent() {
         <ButtonSearch type="button" />
 
         <Link href="/clientes">
-          <ButtonAdd type="button" />
+          <ButtonAdd title="Clientes" />
         </Link>
       </div>
       <div className={`${styles.InicialMenuComponent}`}>

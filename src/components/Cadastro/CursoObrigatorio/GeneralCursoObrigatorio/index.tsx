@@ -30,7 +30,7 @@ export default function CursosObrigatorioComponent() {
 
                 <Link href="/cadastro/cursoobrigatorio/novocursoobrigatorio">
                     <ButtonAdd
-                        type="button"
+                        title="Cadastro de Novo Curso Obrigatório"
                     />
                 </Link>
 
