@@ -41,15 +41,15 @@ export default function InicialMenuComponent() {
           <ButtonSearchInitialPage url="/ges" icon="bi bi-people" arrow="" text="GES" />
           <ButtonSearchInitialPage url="/laudos" icon="bi bi-book" arrow="" text="Laudos" />
           <ButtonSearchInitialPage
-            url="/configuracoes"
+            url=""
             icon="bi bi-gear"
             arrow="bi bi-caret-down"
             text="Configurações"
-            dropdownItems={["Engenheiro", "Usuários", "Trabalhador", "Empresa"]}
+            dropdownItems={["Engenheiro","Empresa", "Usuários" ]}
           />
           <ButtonSearchInitialPage url="/cadastros" icon="bi bi-journal-plus" arrow=" " text="Cadastros" />
           <ButtonSearchInitialPage
-            url="/financeiro"
+            url=""
             icon="bi bi-coin"
             arrow="bi bi-caret-down"
             text="Financeiro"

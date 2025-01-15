@@ -7,7 +7,7 @@ export default function editcargo() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Cargo", url: "/cadastro/cargo" }}
+                nomePagina="Editar Cargo"
                 content={<EditCargo />}
             />
         </div>

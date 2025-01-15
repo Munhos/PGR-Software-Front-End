@@ -9,7 +9,7 @@ export default function ges() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo GES", url: "/ges" }}
+                nomePagina="Novo GES"
                 content={<NewPageGes />}
             />
         </div>

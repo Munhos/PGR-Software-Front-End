@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <ModelPage
-        urlAnterior={{ name: "Home", url: "/" }}
+        nomePagina="Home"
         content={ <InicialMenuComponent /> }
       />
 

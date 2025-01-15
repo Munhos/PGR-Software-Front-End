@@ -7,7 +7,7 @@ export default function equipamento() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Equipamento", url: "/ges/ambientedetrabalho/adicionar" }}
+                nomePagina="Equipamento"
                 content={<EquipamentoComponent />}
             />
         </div>

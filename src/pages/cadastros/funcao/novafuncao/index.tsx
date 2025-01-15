@@ -6,7 +6,7 @@ export default function newfuncao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Nova Função", url: "/cadastro/funcao" }}
+                nomePagina="Nova Função"
                 content={<NewFunction />}
             />
             

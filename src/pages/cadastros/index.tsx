@@ -7,7 +7,7 @@ export default function ventilacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Cadastros", url: "/cadastros" }}
+                nomePagina="Cadastros"
                 content={<CadastroComponent />}
             />
         </div>

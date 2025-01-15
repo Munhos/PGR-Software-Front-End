@@ -82,8 +82,8 @@ export default function SideMenu() {
         icone="bi bi-gear"
         name="Configurações"
         options={[
-          { name: "Engenheiro", url: "/engenheiro" },
-          { name: "Empresa", url: "/empresa" },
+          { name: "Engenheiros", url: "/configuracoes/engenheiros" },
+          { name: "Empresa", url: "/configuracoes/empresa" },
           { name: "Usuários", url: "/configuracoes/usuarios" },
         ]}
         isOpen={openDropdown === "Configurações"}

@@ -6,7 +6,7 @@ export default function newteto() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Teto", url: "/cadastro/teto" }}
+                nomePagina="Novo Teto"
                 content={<NewTeto />}
             />
             

@@ -6,7 +6,7 @@ export default function newsetor() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Setor", url: "/cadastro/setor" }}
+                nomePagina="Novo Setor"
                 content={<NewSetor />}
             />
             

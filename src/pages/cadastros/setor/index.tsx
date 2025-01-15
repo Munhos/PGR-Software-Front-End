@@ -7,7 +7,7 @@ export default function setor() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Setor", url: "/" }}
+                nomePagina="Setor"
                 content={<SetorComponent />}
             />
         </div>

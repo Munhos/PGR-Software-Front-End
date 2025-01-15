@@ -7,7 +7,7 @@ export default function editedificacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Edificação", url: "/cadastro/edificacao" }}
+                nomePagina="Editar Edificação"
                 content={<EditEdificacao />}
             />
         </div>

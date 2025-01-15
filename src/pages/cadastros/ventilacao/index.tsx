@@ -7,7 +7,7 @@ export default function ventilacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Ventilação", url: "/ges/ambientedetrabalho/adicionar" }}
+                nomePagina="Ventilação"
                 content={<VentilacaoComponent />}
             />
         </div>

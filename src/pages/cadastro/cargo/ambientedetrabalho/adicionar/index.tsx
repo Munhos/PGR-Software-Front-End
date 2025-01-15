@@ -7,7 +7,7 @@ export default function ges() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Cadastro de Ambiente de Trabalho", url: "/cadastro" }}
+                nomePagina="Cadastro de Ambiente de Trabalho"
                 content={<AddAmbienteDeTrabalho />}
             />
         </div>

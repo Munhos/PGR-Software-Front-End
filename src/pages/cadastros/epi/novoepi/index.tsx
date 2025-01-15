@@ -6,7 +6,7 @@ export default function newepi() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Epi", url: "/cadastro/epi" }}
+                nomePagina="Novo EPI"
                 content={<NewEpi />}
             />
             

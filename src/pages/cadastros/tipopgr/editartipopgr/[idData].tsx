@@ -7,7 +7,7 @@ export default function edittipopgr() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Setor", url: "/cadastro/tipopgr" }}
+                nomePagina="Editar Setor"
                 content={<EditTipoPgr />}
             />
         </div>

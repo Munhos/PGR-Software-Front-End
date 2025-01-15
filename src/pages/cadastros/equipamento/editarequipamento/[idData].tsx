@@ -7,7 +7,7 @@ export default function editequipamento() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Equipamento", url: "/cadastro/equipamento" }}
+                nomePagina="Editar Equipamento"
                 content={<EditEquipamento />}
             />
         </div>

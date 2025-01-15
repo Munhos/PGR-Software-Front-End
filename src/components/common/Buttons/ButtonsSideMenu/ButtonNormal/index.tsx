@@ -17,7 +17,7 @@ export default function ButtonNormal({ texto, url, icone, showSideMenu }: Button
                     <Link className={`${styles.link} ${styles.buttonNormalContainer}`} href={url}>
 
                         <i className={`${icone} ${styles.iconPrincipal}`}></i>
-                        <Link className={styles.link} href={url}>{texto}</Link>
+                        <div className={styles.link}>{texto}</div>
 
                     </Link>
                 ) : (

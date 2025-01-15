@@ -7,7 +7,7 @@ export default function cursoobrigatorio() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Curso Obrigatório", url: "/" }}
+                nomePagina="Cursos Obrigatórios"
                 content={<CursosObrigatorioComponent />}
             />
         </div>

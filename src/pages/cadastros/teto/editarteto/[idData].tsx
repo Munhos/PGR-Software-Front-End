@@ -7,7 +7,7 @@ export default function editteto() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Teto", url: "/cadastro/teto" }}
+                nomePagina="Editar Teto"
                 content={<EditTeto />}
             />
         </div>

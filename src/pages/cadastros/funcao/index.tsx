@@ -7,7 +7,7 @@ export default function funcao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Função", url: "/" }}
+                nomePagina="Função"
                 content={<FuncaoComponent />}
             />
         </div>

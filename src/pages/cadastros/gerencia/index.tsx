@@ -7,7 +7,7 @@ export default function gerencia() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Gerência", url: "/" }}
+                nomePagina="Gerência"
                 content={<GerenciaComponent />}
             />
         </div>

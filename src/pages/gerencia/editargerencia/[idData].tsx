@@ -8,7 +8,7 @@ export default function gerencia() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Gerência", url: "/gerencia" }}
+                nomePagina="Editar Gerência"
                 content={<EditGerencia />}
             />
         </div>

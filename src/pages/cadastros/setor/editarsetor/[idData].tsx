@@ -7,7 +7,7 @@ export default function editsetor() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Setor", url: "/cadastro/setor" }}
+                nomePagina="Editar Setor"
                 content={<EditSetor />}
             />
         </div>

@@ -7,7 +7,7 @@ export default function editpiso() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Piso", url: "/cadastro/piso" }}
+                nomePagina="Editar Piso"
                 content={<EditPiso />}
             />
         </div>

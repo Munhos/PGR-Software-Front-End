@@ -8,7 +8,7 @@ export default function Trabalhadores() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Edição de Trabalhador", url: "/trabalhadores" }}
+                nomePagina="Edição de Trabalhador"
                 content={<EditTrabalhador />}
             />
         </div>

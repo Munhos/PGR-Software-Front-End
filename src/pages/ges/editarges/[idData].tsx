@@ -8,7 +8,7 @@ export default function ges() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Edição de GES", url: "/ges" }}
+                nomePagina="Edição de GES"
                 content={<EditGes />}
             />
         </div>

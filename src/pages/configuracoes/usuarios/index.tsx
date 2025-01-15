@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <ModelPage
-        urlAnterior={{ name: "Usuários", url: "/" }}
+        nomePagina="Usuários"
         content={ <Usuarios /> }
       />
 

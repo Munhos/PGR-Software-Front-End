@@ -7,7 +7,7 @@ export default function novorac() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "RAC", url: "/" }}
+                nomePagina="RAC"
                 content={<RacComponent />}
             />
         </div>
