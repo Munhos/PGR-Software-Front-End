@@ -2,10 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./style.module.css";
 import Link from "next/link";
+import { PiCertificate } from "react-icons/pi";
+
 
 interface ButtonSearchInitialPageProps {
   url: string;
-  icon: string;
+  icon: string | React.ReactNode;
   arrow: string;
   text: string;
   dropdownItems?: string[];
@@ -51,7 +53,13 @@ export default function ButtonSearchInitialPage({
           className={`${styles.buttonWithDropdown}`}
           onClick={dropdownItems ? toggleDropdown : undefined}
         >
-          <i className={`${icon} ${styles.iconPrincipal}`}></i>
+          <div className={styles.iconPrincipal}>
+            {typeof icon === "string" ? (
+              <i className={icon}></i> 
+            ) : (
+              icon
+            )}
+          </div>
           <div className={styles.text}>{text}</div>
           {dropdownItems && (
             <i className={`${arrow} ${styles.iconSecundary}`}></i>
