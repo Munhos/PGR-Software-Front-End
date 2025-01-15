@@ -47,7 +47,7 @@ export default function CadastroComponent() {
           text="EPI"
         />
         <ButtonSearchInitialPage
-          url="/cadastros/equipamemnto"
+          url="/cadastros/equipamento"
           icon={<GiHammerNails />}
           arrow="bi bi-caret-down"
           text="Equipamento"
