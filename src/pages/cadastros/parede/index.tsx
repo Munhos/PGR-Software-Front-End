@@ -1,13 +1,16 @@
 import React from "react";
 import ModelPage from "@/components/common/ModelPage";
 import ParedeComponent from "@/components/Cadastro/Parede/GeneralParede";
+import router, { useRouter } from "next/router";
 
 export default function parede() {
+
     
+
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Parede", url: "/ges/ambientedetrabalho/adicionar" }}
+                nomePagina="Parede"
                 content={<ParedeComponent />}
             />
         </div>

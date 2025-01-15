@@ -6,7 +6,7 @@ export default function newiluminacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Nova Iluminação", url: "/cadastro/iluminacao" }}
+                nomePagina="Nova Iluminação"
                 content={<NewIluminacao />}
             />
             

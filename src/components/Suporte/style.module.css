@@ -1,0 +1,19 @@
+.mainContainer {
+    background-color: var(--green05);
+    padding: 100px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 15px;
+}
+
+.container i {
+    color: var(--green02);
+    font-size: 1.5rem;
+}

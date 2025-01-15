@@ -45,7 +45,8 @@ export default function EspecificClient({
                             { value: "03", label: "03" },
                         ]}
                         placeHolder="CNAE"
-
+                        height="80px"
+                        width="98.5%"
                     />
                 </div>
                 <div className={styles.inputRow}>

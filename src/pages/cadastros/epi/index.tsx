@@ -7,7 +7,7 @@ export default function epi() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "EPI's", url: "/" }}
+                nomePagina="EPI's"
                 content={<EpiComponent />}
             />
         </div>

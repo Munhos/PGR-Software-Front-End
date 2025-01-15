@@ -13,7 +13,7 @@ export default function Cliente() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Serviço", url: "/servico" }}
+                nomePagina="Editar Serviço"
                 content={<EditPageServicos
                 />}
             />

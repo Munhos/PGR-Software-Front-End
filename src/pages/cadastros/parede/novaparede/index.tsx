@@ -6,7 +6,7 @@ export default function newparede() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Nova Parede", url: "/cadastro/parede" }}
+                nomePagina="Nova Parede"
                 content={<NewParede />}
             />
             

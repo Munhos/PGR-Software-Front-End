@@ -7,7 +7,7 @@ export default function piso() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Piso", url: "/" }}
+                nomePagina="Piso"
                 content={<PisoComponent />}
             />
         </div>

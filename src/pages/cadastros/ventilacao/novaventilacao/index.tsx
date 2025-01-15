@@ -6,7 +6,7 @@ export default function newventilacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Nova Ventilação", url: "/cadastro/ventilacao" }}
+                nomePagina="Nova Ventilação"
                 content={<NewVentilacao />}
             />
             

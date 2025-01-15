@@ -7,7 +7,7 @@ export default function iluminacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Iluminação", url: "/ges/ambientedetrabalho/adicionar" }}
+                nomePagina="Iluminação"
                 content={<IluminacaoComponent />}
             />
         </div>

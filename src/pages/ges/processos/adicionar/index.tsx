@@ -8,7 +8,7 @@ export default function ges() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Cadastro de Fluxograma", url: "/ges/novoges" }}
+                nomePagina="Cadastro de Fluxograma"
                 content={<Fluxograma />}
             />
         </div>

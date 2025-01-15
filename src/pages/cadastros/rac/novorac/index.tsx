@@ -6,7 +6,7 @@ export default function newrac() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo RAC", url: "/cadastro/rac" }}
+                nomePagina="Novo RAC"
                 content={<NewRac />}
             />
             

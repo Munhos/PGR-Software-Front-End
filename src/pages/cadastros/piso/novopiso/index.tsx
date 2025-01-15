@@ -6,7 +6,7 @@ export default function newgpiso() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Piso", url: "/cadastro/piso" }}
+                nomePagina="Novo Piso"
                 content={<NewPiso />}
             />
             

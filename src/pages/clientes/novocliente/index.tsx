@@ -6,7 +6,7 @@ export default function NovoCliente() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Clientes", url: "/clientes" }}
+                nomePagina="Clientes"
                 content={<NewAndEditClient />}
             />
             

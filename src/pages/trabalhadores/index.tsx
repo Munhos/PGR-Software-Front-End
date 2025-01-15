@@ -7,7 +7,7 @@ export default function Trabalhadores() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Trabalhadores", url: "/" }}
+                nomePagina="Trabalhadores"
                 content={<InitialPageTrabalhadores />}
             />
         </div>

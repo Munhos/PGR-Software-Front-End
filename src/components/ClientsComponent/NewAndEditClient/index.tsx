@@ -86,7 +86,7 @@ export default function NewAndEditClient({
             <WriteInput label="Observações" content={observacao || ""} width="100%" placeHolder="Observações"/>
             </div>
             <div className={styles.divContainerInputs2}>
-                <div><ButtonAddImage type="button"/></div>
+                <div><ButtonAddImage name="Adicionar Logo"/></div>
                 <div><ButtonAddPDF type="button"/></div>
                 <div><ButtonSave /></div>
             </div>

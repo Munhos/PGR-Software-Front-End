@@ -8,7 +8,7 @@ export default function ges() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "GES", url: "/" }}
+                nomePagina="GES"
                 content={<InitialPageGes />}
             />
         </div>

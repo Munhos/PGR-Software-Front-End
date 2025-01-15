@@ -12,7 +12,7 @@ export default function Cliente() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Clientes", url: "/clientes" }}
+                nomePagina="Clientes"
                 content={<EspecificClient 
                         cnpj="00.000.000/0001-00"
                         nomeFantasia="Empresa Fictícia LTDA"

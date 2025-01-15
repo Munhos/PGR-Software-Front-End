@@ -7,7 +7,7 @@ export default function editepi() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Epi", url: "/cadastro/epi" }}
+                nomePagina="Editar EPI"
                 content={<EditEpi />}
             />
         </div>

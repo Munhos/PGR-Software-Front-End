@@ -5,11 +5,11 @@ import Link from "next/link";
 import ButtonReturn from "../Buttons/ButtonReturn";
 
 interface ModelPageProps {
-    urlAnterior?: { url: string, name: string };
+    nomePagina: string
     content: any
 }
 
-export default function ModelPage({ urlAnterior, content }: ModelPageProps) {
+export default function ModelPage({ nomePagina, content }: ModelPageProps) {
 
 
     return (
@@ -18,16 +18,12 @@ export default function ModelPage({ urlAnterior, content }: ModelPageProps) {
 
             <div className={styles.containerContent}>
                 <div className={styles.containerButtonReturn}>
-                {
-                    urlAnterior ? (
-                        <ButtonReturn
-                            text={urlAnterior.name}
-                            url={urlAnterior.url}
-                        />
-                    ) : null
-                }
+                    <ButtonReturn
+                        text={nomePagina}
+
+                    />
                 </div>
-                
+
 
                 <div className={styles.content}>
                     {content}

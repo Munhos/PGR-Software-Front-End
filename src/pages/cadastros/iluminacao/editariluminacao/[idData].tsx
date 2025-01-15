@@ -8,7 +8,7 @@ export default function editiluminacao() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Iluminação", url: "/cadastro/iluminacao" }}
+                nomePagina="Editar Iluminação"
                 content={<EditIluminacao />}
             />
         </div>

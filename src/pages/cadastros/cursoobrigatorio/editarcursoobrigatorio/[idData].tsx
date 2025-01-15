@@ -7,7 +7,7 @@ export default function editcursoobrigatorio() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Curso Obrigatório", url: "/cadastro/cursoobrigatorio" }}
+                nomePagina="Editar Curso Obrigatório"
                 content={<EditCursoObrigatorio />}
             />
         </div>

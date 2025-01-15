@@ -7,7 +7,7 @@ export default function editparede() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar Parede", url: "/cadastro/parede" }}
+                nomePagina="Editar Parede"
                 content={<EditParede />}
             />
         </div>

@@ -7,7 +7,7 @@ export default function pgrtype() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Tipo PGR", url: "/" }}
+                nomePagina="Tipo PGR"
                 content={<PgrTypeComponent />}
             />
         </div>

@@ -7,7 +7,7 @@ export default function teto() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Teto", url: "/ges/ambientedetrabalho/adicionar" }}
+                nomePagina="Teto"
                 content={<TetoComponent />}
             />
         </div>

@@ -6,7 +6,7 @@ export default function newcursoobrigatorio() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Novo Curso Obrigatório", url: "/cadastro/cursoobrigatorio" }}
+                nomePagina="Novo Curso Obrigatório"
                 content={<NewCursoObrigatorio />}
             />
             

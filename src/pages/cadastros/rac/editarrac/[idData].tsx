@@ -7,7 +7,7 @@ export default function editrac() {
     return (
         <div>
             <ModelPage
-                urlAnterior={{ name: "Editar RAC", url: "/cadastro/rac" }}
+                nomePagina="Editar RAC"
                 content={<EditRac />}
             />
         </div>
