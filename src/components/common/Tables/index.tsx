@@ -11,7 +11,7 @@ import ButtonDeleteTable from "../Buttons/ButtonsTable/ConjunctButtonEditDelete/
 interface TableComponentProps {
     dataTable: {
         tHeadData: string[];
-        tBodyData: string[][];
+        tBodyData: any[][];
     };
     route?: string;
 }

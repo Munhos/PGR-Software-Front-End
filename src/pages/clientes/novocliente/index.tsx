@@ -1,5 +1,5 @@
 import React from "react";
-import NewAndEditClient from "@/components/ClientsComponent/NewAndEditClient";
+import NewAndEditClient from "@/components/ClientsComponent/NewClient";
 import ModelPage from "@/components/common/ModelPage";
 
 export default function NovoCliente() {

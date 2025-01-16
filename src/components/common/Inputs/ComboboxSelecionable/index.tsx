@@ -28,6 +28,7 @@ const customStyles: StylesConfig = {
       ? undefined
       : provided.boxShadow || "default-box-shadow-value",
     backgroundColor: "transparent",
+    height: "55px"
   }),
   placeholder: (provided) => ({
     ...provided,

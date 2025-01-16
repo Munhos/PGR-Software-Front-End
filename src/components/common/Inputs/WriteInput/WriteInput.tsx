@@ -6,9 +6,10 @@ interface WriteInputProps {
     placeHolder: string;
     width: string;
     label: string;
+    estado?: boolean | "disabled";
 }
 
-export default function WriteInput({ placeHolder, content, width, label }: WriteInputProps) {
+export default function WriteInput({ placeHolder, content, width, label, estado }: WriteInputProps) {
     const [dataContent, setDataContent] = useState(content);
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -27,6 +28,7 @@ export default function WriteInput({ placeHolder, content, width, label }: Write
     return (
         <div className={`${styles["input-wrapper"]} form-floating mb-3`} style={{ width }}>
             <textarea
+                disabled={estado === "disabled" || estado === false}
                 ref={textareaRef}
                 onChange={handleInputChange}
                 value={dataContent}

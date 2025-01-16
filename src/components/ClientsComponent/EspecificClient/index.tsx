@@ -7,6 +7,7 @@ import ButtonAddImage from "@/components/common/Buttons/ButtonAddImageLogo";
 import ButtonAddPDF from "@/components/common/Buttons/ButtonAddDocumentoBase";
 import ButtonSave from "@/components/common/Buttons/ButtonSave";
 import WriteInput from "@/components/common/Inputs/WriteInput/WriteInput";
+import SearchEquipamentoComponent from "@/components/common/Inputs/ComboboxSelecionable";
 
 export default function EspecificClient({
     cnpj = "00.000.000/0001-00",
@@ -37,26 +38,16 @@ export default function EspecificClient({
                     <WriteInput width="50%" placeHolder="E-mail" label="E-mail" content={email} />
                 </div>
                 <div className={styles.inputRow}>
-                    <MultiSelectInput
-                        className={styles.multiSelectInput}
-                        options={[
-                            { value: "01", label: "01" },
-                            { value: "02", label: "02" },
-                            { value: "03", label: "03" },
-                        ]}
-                        placeHolder="CNAE"
-                        height="80px"
-                        width="98.5%"
-                    />
+                    <WriteInput label="CNAE" content={cnae || ""} width="100%" placeHolder="CNAE" />
                 </div>
                 <div className={styles.inputRow}>
                     <WriteInput width="70%" placeHolder="Atividade Principal" label="Atividade Principal" content={atividadePrincipal} />
                     <WriteInput width="30%" placeHolder="Grau de Risco" label="Grau de Risco" content={grauRisco} />
                 </div>
-                <div className={styles.inputRow}>
-                    <WriteInput width="70%" placeHolder="Responsável pela Aprovação" label="Responsável pela Aprovação" content={responsavelAprovacao} />
+                {/* <div className={styles.inputRow}>
+                        
                     <WriteInput width="30%" placeHolder="Data" label="Data" content={data} />
-                </div>
+                </div> */}
             </div>
             <hr />
             <div>
@@ -81,6 +72,13 @@ export default function EspecificClient({
             </div>
             <hr />
             <h3 style={{ marginBottom: "15px" }}>Gerar Laudos</h3>
+
+            <div style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "space-between" }}>
+                <SearchEquipamentoComponent selectPlaceholder="Serviço" options={[{ label: "Serviço 01", value: "Serviço 01" }, { label: "Serviço 02", value: "Serviço 02" }, { label: "Serviço 03", value: "Serviço 03" }]} />
+                <WriteInput width="40%" placeHolder="Responsável pela Aprovação" label="Responsável pela Aprovação" content={responsavelAprovacao} />
+                <WriteInput width="40%" placeHolder="Cargo" label="Cargo" content={""} />
+            </div>
+
             <div className={styles.generateLaudosContainer}>
                 <table className={styles.generateLaudosTableContainer}>
                     <tbody className={styles.generateLaudosTable}>

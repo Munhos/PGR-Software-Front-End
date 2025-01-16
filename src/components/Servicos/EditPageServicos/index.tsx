@@ -24,7 +24,7 @@ export default function EditPageServicos() {
                 </div>
 
                 <div style={{width: "30%"}}>
-                    <h6>Data de Início</h6>
+                    <h6>Data de Fim</h6>
                     <DateInput width="100%" />
                 </div>
 

@@ -56,11 +56,8 @@ export default function NewAndEditClient({
             <WriteInput label="Razão Social" content={razaoSocial || ""} width="100%" placeHolder="Razão Social"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <SelecionableSearchInput 
-                width="98.5%"
-                value={["01", "01", "01"]}
-                placeHolder= "CNAE"
-            />
+            <WriteInput label="Atividade Principal" content={cnae || ""} width="100%" placeHolder="CNAE"/>
+
             </div>
             <div className={styles.divContainerInputs}>
             <WriteInput label="Atividade Principal" content={atividadePrincipal || ""} width="70%" placeHolder="Atividade Principal"/>
@@ -74,10 +71,10 @@ export default function NewAndEditClient({
             <div className={styles.divContainerInputs}>
             <WriteInput label="Localização Completa" content={localizacaoCompleta || ""} width="100%" placeHolder="Localização Completa"/>
             </div>
-            <div className={styles.divContainerInputs}>
+            {/* <div className={styles.divContainerInputs}>
             <WriteInput label="Responsável pela Aprovação" content={responsavelAprovacao || ""} width="70%" placeHolder="Responsável pela Aprovação"/>
             <WriteInput label="Data" content={data || ""} width="30%" placeHolder="Data"/>
-            </div>
+            </div> */}
             <div className={styles.divContainerInputs}>
             <WriteInput label="E-mail Financeiro" content={email || ""} width="50%" placeHolder="E-mail Financeiro"/>
             <WriteInput label="Contato Financeiro" content={contato || ""} width="50%" placeHolder="Contato Financeiro"/>

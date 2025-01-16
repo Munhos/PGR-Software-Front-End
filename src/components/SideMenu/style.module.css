@@ -1,34 +1,41 @@
 .main {
-    width: 250px;
-    min-height: 100vh;
-    background-image: linear-gradient(to bottom, var(--green02), var(--green03));
+  width: 300px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, var(--green02), var(--green03));
+}
 
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-
-    overflow:hidden;
+.divMain {
+  width: 250px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo {
-    transform: scale(0.4);
-    margin: -10px;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+  height: auto;
+
 }
 
 .iconHideMenu {
-    color: var(--white);
-    font-size: 25px;
-    width: 100%;
-    margin-left: 10px;
-    cursor: pointer;
+  color: var(--white);
+  font-size: 25px;
+  width: 100%;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .link {
-    color: white;
+  color: white;
 }
 
 .link2 {
-    color: white;
-    font-size: 10px;
+  color: white;
+  font-size: 10px;
 }
