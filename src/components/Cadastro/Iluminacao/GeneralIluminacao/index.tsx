@@ -28,7 +28,7 @@ export default function IluminacaoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/iluminacao/novailuminacao">
+                <Link href="/cadastros/iluminacao/novailuminacao">
                     <ButtonAdd
                         title="Cadastro de Nova Iluminação"
                     />
@@ -46,7 +46,7 @@ export default function IluminacaoComponent() {
                     ]
                 }}
 
-                route="/cadastro/iluminacao/editariluminacao/"
+                route="/cadastros/iluminacao/editariluminacao/"
             />
         </div>
     );

@@ -28,7 +28,7 @@ export default function FuncaoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/funcao/novafuncao">
+                <Link href="/cadastros/funcao/novafuncao">
                     <ButtonAdd
                         title="Cadastro de Nova Função"
                     />
@@ -46,7 +46,7 @@ export default function FuncaoComponent() {
                     ]
                 }}
 
-                route="/cadastro/funcao/editarfuncao/"
+                route="/cadastros/funcao/editarfuncao/"
             />
         </div>
     );

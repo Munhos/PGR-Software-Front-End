@@ -19,7 +19,7 @@ export default function VentilacaoComponent() {
           <ButtonClean type="button" />
         </div>
 
-        <Link href="/cadastro/ventilacao/novaventilacao">
+        <Link href="/cadastros/ventilacao/novaventilacao">
           <ButtonAdd title="Cadastro de Nova Ventilação" />
         </Link>
       </div>
@@ -32,7 +32,7 @@ export default function VentilacaoComponent() {
             ["003", "Ventilação híbrida"],
           ],
         }}
-        route="/cadastro/ventilacao/editarventilacao/"
+        route="/cadastros/ventilacao/editarventilacao/"
       />
     </div>
   );

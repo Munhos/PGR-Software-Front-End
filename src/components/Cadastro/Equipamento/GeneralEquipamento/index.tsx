@@ -28,7 +28,7 @@ export default function EquipamentoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/equipamento/novoequipamento">
+                <Link href="/cadastros/equipamento/novoequipamento">
                     <ButtonAdd
                         title="Cadastro de Novo Equipamento"
                     />
@@ -46,7 +46,7 @@ export default function EquipamentoComponent() {
                     ]
                 }}
 
-                route="/cadastro/equipamento/editarequipamento/"
+                route="/cadastros/equipamento/editarequipamento/"
             />
         </div>
     );

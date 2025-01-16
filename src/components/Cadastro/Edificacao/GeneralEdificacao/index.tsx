@@ -28,7 +28,7 @@ export default function EdificacaoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/edificacao/novaedificacao/">
+                <Link href="/cadastros/edificacao/novaedificacao/">
                     <ButtonAdd
                         title="Cadastro de Nova Edificação"
                     />
@@ -46,7 +46,7 @@ export default function EdificacaoComponent() {
                     ]
                 }}
 
-                route="/cadastro/edificacao/editaredificacao/"
+                route="/cadastros/edificacao/editaredificacao/"
             />
         </div>
     );

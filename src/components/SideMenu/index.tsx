@@ -52,7 +52,6 @@ export default function SideMenu() {
             transform: showSideMenu ? "translateX(0)" : "translateX(110px)",
           }}
         ></i>
-
         <div
           style={{
             display: "flex",

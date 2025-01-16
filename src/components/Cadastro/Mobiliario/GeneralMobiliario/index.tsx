@@ -28,7 +28,7 @@ export default function MobiliarioComponent() {
 
                 </div>
 
-                <Link href="/cadastro/mobiliario/novomobiliario">
+                <Link href="/cadastros/mobiliario/novomobiliario">
                     <ButtonAdd
                         title="Cadastro de Novo Mobiliário"
                     />
@@ -46,7 +46,7 @@ export default function MobiliarioComponent() {
                     ]
                 }}
 
-                route="/cadastro/mobiliario/editarmobiliario/"
+                route="/cadastros/mobiliario/editarmobiliario/"
             />
         </div>
     );

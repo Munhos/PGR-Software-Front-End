@@ -11,7 +11,7 @@ export default function Engenheiros() {
         <>
             <div style={{width:"100%", display: "flex", justifyContent: "space-between", marginBottom: "15px" }}>
                 <div style={{width:"40%", display:"flex", gap:"15px"}}>
-                    <NormalSearchInput width="65%" placeHolder="Pesquise por Código ou Cargo" />
+                    <NormalSearchInput width="65%" placeHolder="Pesquise por Nome ou Função" />
                     <ButtonSearch type="button" />
                     <ButtonClean type="button" />
                 </div>

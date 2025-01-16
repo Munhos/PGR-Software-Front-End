@@ -28,7 +28,7 @@ export default function TetoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/teto/novoteto">
+                <Link href="/cadastros/teto/novoteto">
                     <ButtonAdd
                         title="Cadastro de Novo Teto"
                     />
@@ -45,7 +45,7 @@ export default function TetoComponent() {
                     ],
                 }}
 
-                route="/cadastro/teto/editarteto/"
+                route="/cadastros/teto/editarteto/"
             />
         </div>
     );
