@@ -28,7 +28,7 @@ export default function EpiComponent() {
 
                 </div>
 
-                <Link href="/cadastro/epi/novoepi">
+                <Link href="/cadastros/epi/novoepi">
                     <ButtonAdd
                         title="Cadastro de Novo EPI"
                     />
@@ -46,7 +46,7 @@ export default function EpiComponent() {
                     ]
                 }}
 
-                route="/cadastro/epi/editarepi/"
+                route="/cadastros/epi/editarepi/"
             />
         </div>
     );

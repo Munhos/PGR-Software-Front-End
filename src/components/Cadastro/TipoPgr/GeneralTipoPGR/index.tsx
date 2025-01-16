@@ -19,7 +19,7 @@ export default function PgrTypeComponent() {
           <ButtonClean type="button" />
         </div>
 
-        <Link href="/cadastro/tipopgr/novotipopgr">
+        <Link href="/cadastros/tipopgr/novotipopgr">
           <ButtonAdd title="Cadastro de Novo Tipo PGR" />
         </Link>
       </div>
@@ -32,7 +32,7 @@ export default function PgrTypeComponent() {
             ["003", "PGRMIN"],
           ],
         }}
-        route="/cadastro/tipopgr/editartipopgr/"
+        route="/cadastros/tipopgr/editartipopgr/"
       />
     </div>
   );

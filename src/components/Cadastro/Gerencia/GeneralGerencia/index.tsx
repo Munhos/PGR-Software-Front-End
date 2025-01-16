@@ -28,7 +28,7 @@ export default function GerenciaComponent() {
 
                 </div>
 
-                <Link href="/cadastro/gerencia/novagerencia">
+                <Link href="/cadastros/gerencia/novagerencia">
                     <ButtonAdd
                         title="Cadastro de Nova Gerência"
                     />
@@ -46,7 +46,7 @@ export default function GerenciaComponent() {
                     ]
                 }}
 
-                route="/cadastro/gerencia/editargerencia/"
+                route="/cadastros/gerencia/editargerencia/"
             />
         </div>
     );

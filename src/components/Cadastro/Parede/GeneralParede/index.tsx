@@ -28,7 +28,7 @@ export default function ParedeComponent() {
 
                 </div>
 
-                <Link href="/cadastro/parede/novaparede">
+                <Link href="/cadastros/parede/novaparede">
                     <ButtonAdd
                         title="Cadastro de Nova Parede"
                     />
@@ -46,7 +46,7 @@ export default function ParedeComponent() {
                     ]
                 }}
 
-                route="/cadastro/parede/editarparede/"
+                route="/cadastros/parede/editarparede/"
             />
         </div>
     );

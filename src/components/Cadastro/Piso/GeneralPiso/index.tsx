@@ -28,7 +28,7 @@ export default function PisoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/piso/novopiso">
+                <Link href="/cadastros/piso/novopiso">
                     <ButtonAdd
                         title="Cadastro de Novo Piso"
                     />
@@ -46,7 +46,7 @@ export default function PisoComponent() {
                     ]
                 }}
 
-                route="/cadastro/piso/editarpiso/"
+                route="/cadastros/piso/editarpiso/"
             />
         </div>
     );

@@ -29,7 +29,7 @@ export default function CargoComponent() {
 
                 </div>
 
-                <Link href="/cadastro/cargo/novocargo">
+                <Link href="/cadastros/cargo/novocargo">
                     <ButtonAdd
                         title="Cadastro de Novo Cargo"
                     />
@@ -46,7 +46,7 @@ export default function CargoComponent() {
                     ]
                 }}
 
-                route="/cadastro/cargo/editarcargo/"
+                route="/cadastros/cargo/editarcargo/"
             />
         </div>
     );

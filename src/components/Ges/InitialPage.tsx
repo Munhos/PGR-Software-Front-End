@@ -11,7 +11,7 @@ export default function InitialPageGes() {
         <div >
             <div style={{display: "flex", justifyContent: "space-between", marginBottom: "15px"}}>
                 <div style={{display: "flex", width:"100%", gap: "15px"}}>
-                    <NormalSearchInput width="30%" placeHolder="Pesquise por Código ou Cargo" />
+                    <NormalSearchInput width="30%" placeHolder="Pesquise por Código, GES ou Tipo PGR" />
                     <ButtonSearch type="button" />
                     <ButtonClean type="button" />
                 </div>
@@ -23,11 +23,11 @@ export default function InitialPageGes() {
 
             <TableComponent
                 dataTable={{
-                    tHeadData: ["Código", "Cargo"],
-                    tBodyData: [["0001", "0001", "Engenheiro Cívil"],
-                                ["0002", "0002", "Engenheiro Eletrônico"],
-                                ["0003", "0003", "Engenheiro Mecânico"],
-                                ["0004", "0004", "Engenheiro Mecânico"],]
+                    tHeadData: ["Código", "GES", "Tipo PGR"],
+                    tBodyData: [["0001", "01", "Administrativo Agrícola", "PGRTR"],
+                                ["0002", "02",  "Líder Agrícola", "PGRTR"],
+                                ["0003", "03",  "Operador de Máquina Agrícola", "PGRTR"],
+                                ["0004", "04",  "Auxiliar Agrícola", "PGRTR"],]
                 }}
                 route="/ges/editarges/"
             />

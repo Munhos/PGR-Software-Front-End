@@ -28,7 +28,7 @@ export default function CursosObrigatorioComponent() {
 
                 </div>
 
-                <Link href="/cadastro/cursoobrigatorio/novocursoobrigatorio">
+                <Link href="/cadastros/cursoobrigatorio/novocursoobrigatorio">
                     <ButtonAdd
                         title="Cadastro de Novo Curso Obrigatório"
                     />
@@ -46,7 +46,7 @@ export default function CursosObrigatorioComponent() {
                     ]
                 }}
 
-                route="/cadastro/cursoobrigatorio/editarcursoobrigatorio/"
+                route="/cadastros/cursoobrigatorio/editarcursoobrigatorio/"
             />
         </div>
     );

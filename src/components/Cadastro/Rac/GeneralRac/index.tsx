@@ -28,7 +28,7 @@ export default function RacComponent() {
 
                 </div>
 
-                <Link href="/cadastro/rac/novorac/">
+                <Link href="/cadastros/rac/novorac/">
                     <ButtonAdd
                         title="Cadastro de Novo RAC"
                     />
@@ -46,7 +46,7 @@ export default function RacComponent() {
                     ]
                 }}
 
-                route="/cadastro/rac/editarrac/"
+                route="/cadastros/rac/editarrac/"
             />
         </div>
     );

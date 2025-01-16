@@ -28,7 +28,7 @@ export default function SetorComponent() {
 
                 </div>
 
-                <Link href="/cadastro/setor/novosetor">
+                <Link href="/cadastros/setor/novosetor">
                     <ButtonAdd
                         title="Cadastro de Novo Setor"
                     />
@@ -45,7 +45,7 @@ export default function SetorComponent() {
                     ],
                 }}
 
-                route="/cadastro/setor/editarsetor/"
+                route="/cadastros/setor/editarsetor/"
             />
         </div>
     );

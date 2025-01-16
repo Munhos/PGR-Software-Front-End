@@ -16,6 +16,8 @@ import { FaPeopleRoof } from "react-icons/fa6";
 import { PiSolarRoofLight } from "react-icons/pi";
 import { IoDocumentsOutline } from "react-icons/io5";
 import { GrFanOption } from "react-icons/gr";
+import { FaTruck } from "react-icons/fa";
+import { FaTriangleExclamation } from "react-icons/fa6";
 
 
 export default function CadastroComponent() {
@@ -117,6 +119,18 @@ export default function CadastroComponent() {
           icon={<GrFanOption />}
           arrow="bi bi-caret-down"
           text="Ventilação"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/fatoresrisco"
+          icon={<FaTriangleExclamation />}
+          arrow="bi bi-caret-down"
+          text="Fatores de Risco"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/veiculo"
+          icon={<FaTruck />}
+          arrow="bi bi-caret-down"
+          text="Veículo"
         />
       </div>
     </>

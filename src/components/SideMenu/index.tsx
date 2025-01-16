@@ -112,7 +112,7 @@ export default function SideMenu() {
 
       <ButtonDropdown
         icone="bi bi-file-earmark-lock"
-        name="Administrador"
+        name="Administrador do software"
         options={[
           { name: "Empresa", url: "/administrador/empresa" },
         ]}

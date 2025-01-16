@@ -1,44 +1,52 @@
-import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
-import SearchEquipamentoComponent from "@/components/common/Inputs/ComboboxSelecionable";
-import SimpleInputSelect from "@/components/common/Inputs/ComboboxSelecionable";
-import TableComponent from "@/components/common/Tables";
-import Link from "next/link";
 import React from "react";
+import TableComponent from "@/components/common/Tables";
+import NormalSearchInput from "@/components/common/Inputs/NormalSearchInput";
+import styles from "./style.module.css";
+import ButtonSearch from "@/components/common/Buttons/ButtonSearch";
+import ButtonAdd from "@/components/common/Buttons/ButtonAdd";
+import ButtonClean from "@/components/common/Buttons/ButtonClean";
+import Link from "next/link";
 
-export default function InitialPageTrabalhadores() {
-    const handleSelectChange = (selectedOption: { label: string; value: string } | null) => {
-        console.log("Selecionado:", selectedOption);
-    };
-
+export default function EpiComponent() {
     return (
-        <>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <SearchEquipamentoComponent
-                    options={[
-                        { label: "SEARA", value: "SEARA" },
-                        { label: "JBS", value: "JBS" },
-                        { label: "Santa Terezinha", value: "Santa Terezinha" },
-                        { label: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA", value: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA" }
-                    ]}
-                    selectPlaceholder="Selecione um Cliente"
-                    selectOnChange={handleSelectChange}
+        <div>
+            <div className={styles.mainContainerOptions}>
+                <div className={styles.containerOptions}>
 
-                />                <div style={{ marginLeft: "15px" }}>
+                    <NormalSearchInput
+                        width="450px"
+                        placeHolder="Pesquise por Código, Nome, CPF, Cargo, Gerência ou Setor"
+                    />
 
-                 <Link href="/trabalhadores/novotrabalhador">
-                    <ButtonAdd title="Cadastro de Trabalhador" />
-                 </Link>   
+                    <ButtonSearch
+                        type="button"
+                    />
+
+                    <ButtonClean
+                        type="button"
+                    />
+
                 </div>
-            </div>
 
+                <Link href="/trabalhadores/novotrabalhador">
+                    <ButtonAdd
+                        title="Cadastro de Novo EPI"
+                    />
+                </Link>
+
+
+            </div>
             <TableComponent
                 dataTable={{
                     tHeadData: ["Código", "Nome", "Cargo"],
-                    tBodyData: [["001", "001", "Jorge", "Desenvolvedor"], ["002", "002", "Jorge", "Desenvolvedor"]]
+                    tBodyData: [
+                      ["001", "001", "Jorge", "Desenvolvedor"],
+                      ["002", "002", "Jorge", "Desenvolvedor"]
+                    ]
                 }}
 
-                route="/trabalhadores/editartrabalhador/"
+                route="/trabalhadoreseditartrabalhador/"
             />
-        </>
-    )
+        </div>
+    );
 }
