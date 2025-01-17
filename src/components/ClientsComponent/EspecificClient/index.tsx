@@ -75,8 +75,6 @@ export default function EspecificClient({
 
             <div style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "space-between" }}>
                 <SearchEquipamentoComponent selectPlaceholder="Serviço" options={[{ label: "Serviço 01", value: "Serviço 01" }, { label: "Serviço 02", value: "Serviço 02" }, { label: "Serviço 03", value: "Serviço 03" }]} />
-                <WriteInput width="40%" placeHolder="Responsável pela Aprovação" label="Responsável pela Aprovação" content={responsavelAprovacao} />
-                <WriteInput width="40%" placeHolder="Cargo" label="Cargo" content={""} />
             </div>
 
             <div className={styles.generateLaudosContainer}>

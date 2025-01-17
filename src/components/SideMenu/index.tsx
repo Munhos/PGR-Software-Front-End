@@ -139,7 +139,7 @@ export default function SideMenu() {
 
         <ButtonDropdown
           icone="bi bi-file-earmark-lock"
-          name="Administrador"
+          name="Administrador Software"
           options={[{ name: "Empresas", url: "/administrador/empresas" }]}
           isOpen={openDropdown === "Administrador"}
           onToggle={() => handleDropdownToggle("Administrador")}

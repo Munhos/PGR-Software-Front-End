@@ -45,7 +45,7 @@ export default function EpiComponent() {
                     ]
                 }}
 
-                route="/trabalhadoreseditartrabalhador/"
+                route="/trabalhadores/editartrabalhador/"
             />
         </div>
     );

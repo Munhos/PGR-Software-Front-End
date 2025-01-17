@@ -13,12 +13,14 @@ export default function InitialPageLaudos() {
         <>
             <div className={styles.containerSeachOptions}>
                 <NormalSearchInput width="20%" placeHolder="Laudos" />
-                <SearchEquipamentoComponent width="20%" options={[{ label: "SEARA", value: "SEARA" },
-                { label: "JBS", value: "JBS" },
-                { label: "Santa Terezinha", value: "Santa Terezinha" },
-                { label: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA", value: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA" }
-                ]}
-                    placeholder="Selecione um Cliente" />
+                <div>
+                    <SearchEquipamentoComponent width="20%" options={[{ label: "SEARA", value: "SEARA" },
+                    { label: "JBS", value: "JBS" },
+                    { label: "Santa Terezinha", value: "Santa Terezinha" },
+                    { label: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA", value: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA" }
+                    ]}
+                        placeholder="Selecione um Cliente" />
+                </div>
                 <ButtonSearch type="button" />
                 <ButtonClean type="button" />
             </div>

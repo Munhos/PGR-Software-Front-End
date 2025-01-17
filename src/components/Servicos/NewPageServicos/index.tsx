@@ -11,6 +11,10 @@ export default function NewPageServicos() {
     return (
         <div>
             <WriteInput label="Descrição" content="" width="100%" placeHolder="Descrição" />
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <WriteInput label="Responsável Pela Aprovação" content="" width="50%" placeHolder="Responsável Pela Aprovação" />
+                <WriteInput label="Cargo" content="" width="50%" placeHolder="Cargo" />
+            </div>
             <div className={styles.divContainerInputs}>
                 <div style={{ width: "30%" }}>
                     <h6>Data de Início</h6>

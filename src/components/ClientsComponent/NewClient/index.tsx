@@ -56,7 +56,7 @@ export default function NewAndEditClient({
             <WriteInput label="Razão Social" content={razaoSocial || ""} width="100%" placeHolder="Razão Social"/>
             </div>
             <div className={styles.divContainerInputs}>
-            <WriteInput label="Atividade Principal" content={cnae || ""} width="100%" placeHolder="CNAE"/>
+            <WriteInput estado="disabled" label="CNAE" content={cnae || ""} width="100%" placeHolder="CNAE"/>
 
             </div>
             <div className={styles.divContainerInputs}>

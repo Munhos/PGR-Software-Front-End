@@ -19,15 +19,21 @@ export default function NewPageGes() {
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>
                             <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="Req. Ativ. Crítica (RAC)" />
-                            <ButtonAdd title="Cadastro de Req. Ativ. Crítica (RAC)" />
+                            <Link href="/cadastros/rac">
+                                <ButtonAdd title="Cadastro de Req. Ativ. Crítica (RAC)" />
+                            </Link>
                         </div>
                         <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>       
                             <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="Cursos Obrigatórios" />
-                            <ButtonAdd title="Cadastro de Cursos Obrigatórios" />
+                            <Link href="/cadastros/cursoobrigatorio">
+                                <ButtonAdd title="Cadastro de Cursos Obrigatórios" />
+                            </Link>
                         </div>
                         <div style={{width: "32.5%", display: "flex", alignItems: "center", gap: "10px" }}>         
                             <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="90%" placeHolder="EPI Obrigatório" />
-                            <ButtonAdd title="Cadastro de EPI Obrigatório" />
+                            <Link href="/cadastros/epi">
+                                <ButtonAdd title="Cadastro de EPI Obrigatório" />
+                            </Link>
                         </div>
                     </div>
                     <div style={{ display: "flex" }}>
@@ -52,7 +58,9 @@ export default function NewPageGes() {
                     <div style={{ display: "flex" }}>
                         <div style={{width: "100%", display: "flex", alignItems: "center", gap: "10px" }}>
                             <MultiSelectInput options={[{ label: "001", value: "001" }, { label: "002", value: "002" }, { label: "003", value: "003" }]} height="80px" width="100%" placeHolder="Tipo PGR" />
-                            <ButtonAdd title="Cadastro de Tipo PGR" />
+                            <Link href="/cadastros/tipopgr">
+                                <ButtonAdd title="Cadastro de Tipo PGR" />
+                            </Link>
                         </div>
                     </div>
                     <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>

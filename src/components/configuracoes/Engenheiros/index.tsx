@@ -30,7 +30,7 @@ export default function Engenheiros() {
                                 ["0003", "Engenheiro C", "Engenheiro Mecânico"],
                                 ["0004", "Engenheiro D", "Engenheiro Mecânico"],]
                 }}
-                route="/ges/editarges/"
+                route="/configuracoes/engenheiros/editar/"
             />
             </div>
         </>
