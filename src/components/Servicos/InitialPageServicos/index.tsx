@@ -13,8 +13,8 @@ export default function InitialPageServicos() {
             <div className={styles.mainContainerInputs}>
                 <div className={styles.divContainerInputs}>
                     <NormalSearchInput
-                        width="300px"
-                        placeHolder="Descrição, Dt de Início, Dt de Fim"
+                        width="350px"
+                        placeHolder="Pesquise por Descrição, Dt de Início, Dt de Fim"
                     />
 
                     <ButtonSearch

@@ -12,7 +12,7 @@ export default function VeiculoComponent() {
     <div>
       <div className={styles.mainContainerOptions}>
         <div className={styles.containerOptions}>
-          <NormalSearchInput width="300px" placeHolder="Descrição" />
+          <NormalSearchInput width="300px" placeHolder="Pesquise por Descrição" />
 
           <ButtonSearch type="button" />
 

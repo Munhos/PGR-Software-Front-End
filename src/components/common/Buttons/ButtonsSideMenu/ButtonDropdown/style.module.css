@@ -59,11 +59,13 @@
 .accordionItem {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 93%;
+  border-radius: 15px;
 }
 
 .accordionItem:hover {
   background-color: var(--green02);
+  width: 95%;
   transition: 0.1s;
 }
 

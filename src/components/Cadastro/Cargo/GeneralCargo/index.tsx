@@ -16,7 +16,7 @@ export default function CargoComponent() {
 
                     <NormalSearchInput
                         width="300px"
-                        placeHolder="Descrição"
+                        placeHolder="Pesquise por Descrição"
                     />
 
                     <ButtonSearch 

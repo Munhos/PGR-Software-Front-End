@@ -4,13 +4,17 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import { PiCertificate } from "react-icons/pi";
 
+interface DropdownItem {
+  label: string;
+  url: string;
+}
 
 interface ButtonSearchInitialPageProps {
   url: string;
   icon: string | React.ReactNode;
   arrow: string;
   text: string;
-  dropdownItems?: string[];
+  dropdownItems?: DropdownItem[];
 }
 
 export default function ButtonSearchInitialPage({
@@ -21,7 +25,7 @@ export default function ButtonSearchInitialPage({
   dropdownItems,
 }: ButtonSearchInitialPageProps) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null); // Referência para o dropdown
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev);
@@ -32,7 +36,7 @@ export default function ButtonSearchInitialPage({
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node)
     ) {
-      setDropdownOpen(false); // Fecha o dropdown
+      setDropdownOpen(false);
     }
   };
 
@@ -55,7 +59,7 @@ export default function ButtonSearchInitialPage({
         >
           <div className={styles.iconPrincipal}>
             {typeof icon === "string" ? (
-              <i className={icon}></i> 
+              <i className={icon}></i>
             ) : (
               icon
             )}
@@ -68,9 +72,13 @@ export default function ButtonSearchInitialPage({
         {dropdownItems && isDropdownOpen && (
           <div className={`${styles.dropdownMenu}`}>
             {dropdownItems.map((item, index) => (
-              <a key={index} className={styles.dropdownItem}>
-                {item}
-              </a>
+              <Link
+                key={index}
+                href={item.url}
+                className={styles.dropdownItem}
+              >
+                {item.label}
+              </Link>
             ))}
           </div>
         )}

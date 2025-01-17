@@ -15,7 +15,7 @@ export default function EdificacaoComponent() {
 
                     <NormalSearchInput
                         width="300px"
-                        placeHolder="Descrição"
+                        placeHolder="Pesquise por Descrição"
                     />
 
                     <ButtonSearch

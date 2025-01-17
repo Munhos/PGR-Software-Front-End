@@ -2,15 +2,15 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 93%;
     transform: translateX(-4px);
-
+    border-radius: 15px;
     padding: 13px;
 }
 
 .buttonNormalContainer:hover {
     background-color: var(--green02);
-    width: 100%;
+    width: 95%;
 }
 
 .iconPrincipal {

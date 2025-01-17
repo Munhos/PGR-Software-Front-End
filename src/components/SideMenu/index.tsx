@@ -7,6 +7,7 @@ import ButtonNormal from "../common/Buttons/ButtonsSideMenu/ButtonNormal";
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function SideMenu() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [showSideMenu, setShowSideMenu] = useState(true);
@@ -74,6 +75,7 @@ export default function SideMenu() {
             ) : (
               <span>Carregando...</span>
             )}
+
           </Link>
         </div>
 
