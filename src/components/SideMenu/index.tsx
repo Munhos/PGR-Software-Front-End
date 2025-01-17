@@ -5,6 +5,7 @@ import logoPGRSoftware from "../../../public/logos/logoPgrSoftware.png";
 import ButtonDropdown from "../common/Buttons/ButtonsSideMenu/ButtonDropdown";
 import ButtonNormal from "../common/Buttons/ButtonsSideMenu/ButtonNormal";
 import Link from "next/link";
+import { RxQuestionMarkCircled } from "react-icons/rx";
 
 export default function SideMenu() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -49,7 +50,6 @@ export default function SideMenu() {
           />
         </Link>
       )}
-
       <ButtonNormal
         texto="Serviços"
         url="/servico"
@@ -94,7 +94,6 @@ export default function SideMenu() {
         texto="Cadastros"
         url="/cadastros"
         icone="bi bi-journal-plus"
-
         showSideMenu={showSideMenu}
       />
 
@@ -113,9 +112,7 @@ export default function SideMenu() {
       <ButtonDropdown
         icone="bi bi-file-earmark-lock"
         name="Administrador do software"
-        options={[
-          { name: "Empresa", url: "/administrador/empresa" },
-        ]}
+        options={[{ name: "Empresa", url: "/administrador/empresa" }]}
         isOpen={openDropdown === "Administrador"}
         onToggle={() => handleDropdownToggle("Administrador")}
         showSideMenu={showSideMenu}
@@ -131,17 +128,18 @@ export default function SideMenu() {
       <ButtonDropdown
         icone="bi bi-person-circle"
         name="Usuário"
-        options={[
-          { name: "Minha Conta", url: "option1" },
-        ]}
+        options={[{ name: "Minha Conta", url: "option1" }]}
         isOpen={openDropdown === "Usuário"}
         onToggle={() => handleDropdownToggle("Usuário")}
         showSideMenu={showSideMenu}
       />
 
-      <Link className={styles.link} href={"/suporte"}>
-        Suporte
-      </Link>
+      <ButtonNormal
+        texto="Suporte"
+        url="/suporte"
+        icone={<RxQuestionMarkCircled />}
+        showSideMenu={showSideMenu}
+      />
 
       {showSideMenu ? (
         <>

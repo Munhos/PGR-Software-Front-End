@@ -15,7 +15,7 @@ export default function PisoComponent() {
 
                     <NormalSearchInput
                         width="300px"
-                        placeHolder="Descrição"
+                        placeHolder="Pesquise por Descrição"
                     />
 
                     <ButtonSearch
