@@ -12,9 +12,9 @@ export default function InitialPageLaudos() {
     return (
         <>
             <div className={styles.containerSeachOptions}>
-                <NormalSearchInput width="20%" placeHolder="Laudos" />
+                <NormalSearchInput width="20%" placeHolder="Laudos Gerados" />
                 <div>
-                    <SearchEquipamentoComponent width="20%" options={[{ label: "SEARA", value: "SEARA" },
+                    <SearchEquipamentoComponent width="20%" selectHeight="50px" options={[{ label: "SEARA", value: "SEARA" },
                     { label: "JBS", value: "JBS" },
                     { label: "Santa Terezinha", value: "Santa Terezinha" },
                     { label: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA", value: "COOPERVAL COOPERATIVA AGROINDUSTRIAL VALE DO IVAI LTDA" }

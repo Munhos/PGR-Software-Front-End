@@ -18,23 +18,8 @@ interface Props {
   width?: string;
   maxWidth?: string;
   minWidth?: string;
+  selectHeight?: string; // Nova prop para definir a altura do select
 }
-
-const customStyles: StylesConfig = {
-  control: (provided, state) => ({
-    ...provided,
-    border: "none",
-    boxShadow: state.isFocused
-      ? undefined
-      : provided.boxShadow || "default-box-shadow-value",
-    backgroundColor: "transparent",
-    height: "55px"
-  }),
-  placeholder: (provided) => ({
-    ...provided,
-    color: "#4e4e4e",
-  }),
-};
 
 const SearchEquipamentoComponent = ({
   value,
@@ -49,11 +34,27 @@ const SearchEquipamentoComponent = ({
   required,
   width,
   maxWidth,
-  minWidth
+  minWidth,
+  selectHeight = "55px" // Altura padrão
 }: Props) => {
+  const customStyles: StylesConfig = {
+    control: (provided, state) => ({
+      ...provided,
+      border: "none",
+      boxShadow: state.isFocused
+        ? undefined
+        : provided.boxShadow || "default-box-shadow-value",
+      backgroundColor: "transparent",
+      height: selectHeight, // Usando a altura a partir das props
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: "#4e4e4e",
+    }),
+  };
+
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
   };
 
   return (
