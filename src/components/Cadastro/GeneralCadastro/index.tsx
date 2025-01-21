@@ -18,6 +18,12 @@ import { IoDocumentsOutline } from "react-icons/io5";
 import { GrFanOption } from "react-icons/gr";
 import { FaTruck } from "react-icons/fa";
 import { FaTriangleExclamation } from "react-icons/fa6";
+import { GiThorHammer } from "react-icons/gi";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { FaRadiation } from "react-icons/fa";
+import { TbWind } from "react-icons/tb";
+import { GrDirections } from "react-icons/gr";
+import { AiOutlineControl } from "react-icons/ai";
 
 
 export default function CadastroComponent() {
@@ -131,6 +137,42 @@ export default function CadastroComponent() {
           icon={<FaTruck />}
           arrow="bi bi-caret-down"
           text="Veículo"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/tecnicautilizada"
+          icon={<GiThorHammer />}
+          arrow="bi bi-caret-down"
+          text="Técnica Utilizada"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/fontegeradora"
+          icon={<AiFillThunderbolt  />}
+          arrow="bi bi-caret-down"
+          text="Fonte Geradora"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/exposicao"
+          icon={<FaRadiation  />}
+          arrow="bi bi-caret-down"
+          text="Exposição"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/meiopropagacao"
+          icon={<TbWind  />}
+          arrow="bi bi-caret-down"
+          text="Meio de Propagação"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/tragetoria"
+          icon={<GrDirections  />}
+          arrow="bi bi-caret-down"
+          text="Tragetória"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/medidacontrole"
+          icon={<AiOutlineControl  />}
+          arrow="bi bi-caret-down"
+          text="Medida de Controle"
         />
       </div>
     </>
