@@ -18,7 +18,7 @@ export default function AddRisco() {
                 } />
 
                 <div style={{ display: "flex", width: "50%", gap: "10px" }}>
-                    <SelecionableSearchInput height="60px" width="100%" placeHolder="fonte Geradora" value={
+                    <SelecionableSearchInput height="60px" width="100%" placeHolder="Fonte Geradora" value={
                         ["Área Administrativa", "Trabalho com computadores na operação industrial"]
                     } />
                     <ButtonAdd title="Adicionar Técnica Utilizada" />
@@ -106,7 +106,8 @@ export default function AddRisco() {
                                 ]
                             }}
 
-                            noRenderEdit={true}
+                            route="/cadastros/riscos/novorisco/editaravaliacao/"
+
                         />
                     </div>
                     
@@ -134,10 +135,15 @@ export default function AddRisco() {
                                 ["001", "Realizar avaliação quantitativa para verificação de eficiência das medidas de controle"]
                             ]
                         }}
+
+                        route="/cadastros/riscos/novorisco/editarplanoacao/"
+
                     />
                 </div>
 
-                <button className="btn btn-outline-success" style={{ margin: "15px" }}>ADICIONAR PLANO DE AÇÃO</button>
+                <Link href="/cadastros/riscos/novorisco/novoplanoacao">
+                    <button className="btn btn-outline-success" style={{ margin: "15px" }}>ADICIONAR PLANO DE AÇÃO</button>
+                </Link>        
 
             </div>
 
@@ -177,7 +183,7 @@ export default function AddRisco() {
 
             </div>
 
-            <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "15px" }}>
+            <div style={{ display: "flex", justifyContent: "flex-end", margin: "15px 15px" }}>
                 <ButtonSave />
             </div>
         </>

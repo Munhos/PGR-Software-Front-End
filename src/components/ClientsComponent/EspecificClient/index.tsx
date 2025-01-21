@@ -75,6 +75,7 @@ export default function EspecificClient({
 
             <div style={{ display: "flex", gap: "10px", alignItems: "center", justifyContent: "space-between" }}>
                 <SearchEquipamentoComponent selectPlaceholder="Serviço" options={[{ label: "Serviço 01", value: "Serviço 01" }, { label: "Serviço 02", value: "Serviço 02" }, { label: "Serviço 03", value: "Serviço 03" }]} />
+
             </div>
 
             <div className={styles.generateLaudosContainer}>
@@ -120,8 +121,7 @@ export default function EspecificClient({
                                 Programa de Proteção Respiratoria (PPR)
                             </td>
                             <td className={styles.tableTd}>
-                                <input type="checkbox" name="" />
-                                ASO
+                                
                             </td>
                         </tr>
 

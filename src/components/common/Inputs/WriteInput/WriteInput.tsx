@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.css";
 
 interface WriteInputProps {
-    content: string;
-    placeHolder: string;
+    content?: string;
+    placeHolder?: string;
     width: string;
     label: string;
     estado?: boolean | "disabled";
@@ -34,7 +34,7 @@ export default function WriteInput({ placeHolder, content, width, label, estado 
                 value={dataContent}
                 className={`form-control ${styles.texareaInput}`}
                 id="floatingTextarea"
-                placeholder={placeHolder}
+                placeholder={placeHolder || ""}
                 rows={1} // Define a altura inicial
                 style={{
                     resize: "none", // Impede o redimensionamento manual

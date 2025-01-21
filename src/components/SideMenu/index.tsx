@@ -101,7 +101,7 @@ export default function SideMenu() {
         />
 
         <ButtonNormal
-          texto="Laudos"
+          texto="Gerar Laudos"
           url="/laudos"
           icone="bi bi-book"
           showSideMenu={showSideMenu}
