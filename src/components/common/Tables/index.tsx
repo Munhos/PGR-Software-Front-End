@@ -7,6 +7,7 @@ import styles from './style.module.css'; // Seu CSS deve vir depois
 import { useRouter } from "next/router";
 import ButtonDownload from "../Buttons/ButtonDownload";
 import ButtonDeleteTable from "../Buttons/ButtonsTable/ConjunctButtonEditDelete/ButtonDelete";
+import ButtonEditTable from "../Buttons/ButtonsTable/ConjunctButtonEditDelete/ButtonEdit";
 
 interface TableComponentProps {
     dataTable: {
@@ -14,9 +15,10 @@ interface TableComponentProps {
         tBodyData: any[][];
     };
     route?: string;
+    noRenderEdit?: boolean;
 }
 
-const TableComponent: React.FC<TableComponentProps> = ({ dataTable, route }) => {
+const TableComponent: React.FC<TableComponentProps> = ({ dataTable, route, noRenderEdit }) => {
     const [openPopoverId, setOpenPopoverId] = useState<string | null>(null);
     const [formatedData, setFormatedData] = useState<any[]>([]);
     const [atualPage, setAtualPage] = useState(1);
@@ -34,9 +36,17 @@ const TableComponent: React.FC<TableComponentProps> = ({ dataTable, route }) => 
         return (
             <Popover id={`popover-actions-${id}`} className="popover-actions">
                 <Popover.Body>
-                    <ul className="list-unstyled">
-                        <ConjunctButtonEditDelete idData={id} />
-                    </ul>
+                    {
+                        noRenderEdit ? (
+                            <ul className="list-unstyled">
+                                <ButtonDeleteTable idData={id} />
+                            </ul>
+                        ) : (
+                            <ul className="list-unstyled">
+                                <ConjunctButtonEditDelete idData={id} />
+                            </ul>
+                        )
+                    }
                 </Popover.Body>
             </Popover>
         );

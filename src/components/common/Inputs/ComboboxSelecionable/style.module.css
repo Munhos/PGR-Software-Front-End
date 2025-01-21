@@ -10,9 +10,7 @@
   border-bottom: 1px solid var(--green03);
   border-radius: 0;
   transition: 0.3s;
-  outline: none;
-  min-width: 15rem;
-  max-width: 50rem;
+  outline: none; 
 }
 
 .input::placeholder {
