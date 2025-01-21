@@ -25,10 +25,10 @@ import { TbWind } from "react-icons/tb";
 import { GrDirections } from "react-icons/gr";
 import { AiOutlineControl } from "react-icons/ai";
 
-
 export default function CadastroComponent() {
   return (
     <>
+      <h4>Cadastro Trabalhador </h4>
       <div className={`${styles.containerPrimaryButtons}`}>
         <ButtonSearchInitialPage
           url="/cadastros/cargo"
@@ -37,7 +37,22 @@ export default function CadastroComponent() {
           text="Cargo"
         />
         <ButtonSearchInitialPage
-          icon= {<PiCertificate />}
+          url="/cadastros/funcao"
+          icon={<MdOutlineWorkHistory />}
+          arrow=" "
+          text="Função"
+        />
+        <ButtonSearchInitialPage
+          url="/cadastros/gerencia"
+          icon={<GrUserManager />}
+          arrow="bi bi-caret-down"
+          text="Gerência"
+        />
+      </div>
+      <h4>Cadastro GES </h4>
+      <div className={`${styles.containerSecondaryButtons}`}>
+        <ButtonSearchInitialPage
+          icon={<PiCertificate />}
           url="/cadastros/cursoobrigatorio"
           arrow=""
           text="Curso Obrigatório"
@@ -59,18 +74,6 @@ export default function CadastroComponent() {
           icon={<GiHammerNails />}
           arrow="bi bi-caret-down"
           text="Equipamento"
-        />
-        <ButtonSearchInitialPage
-          url="/cadastros/funcao"
-          icon={<MdOutlineWorkHistory />}
-          arrow=" "
-          text="Função"
-        />
-        <ButtonSearchInitialPage
-          url="/cadastros/gerencia"
-          icon={<GrUserManager />}
-          arrow="bi bi-caret-down"
-          text="Gerência"
         />
         <ButtonSearchInitialPage
           url="/cadastros/iluminacao"
@@ -127,16 +130,19 @@ export default function CadastroComponent() {
           text="Ventilação"
         />
         <ButtonSearchInitialPage
-          url="/cadastros/fatoresrisco"
-          icon={<FaTriangleExclamation />}
-          arrow="bi bi-caret-down"
-          text="Fatores de Risco"
-        />
-        <ButtonSearchInitialPage
           url="/cadastros/veiculo"
           icon={<FaTruck />}
           arrow="bi bi-caret-down"
           text="Veículo"
+        />
+      </div>
+      <h4>Cadastro Risco </h4>
+      <div className={`${styles.containerThirdButtons}`}>
+        <ButtonSearchInitialPage
+          url="/cadastros/fatoresrisco"
+          icon={<FaTriangleExclamation />}
+          arrow="bi bi-caret-down"
+          text="Fatores de Risco"
         />
         <ButtonSearchInitialPage
           url="/cadastros/tecnicautilizada"
@@ -146,31 +152,31 @@ export default function CadastroComponent() {
         />
         <ButtonSearchInitialPage
           url="/cadastros/fontegeradora"
-          icon={<AiFillThunderbolt  />}
+          icon={<AiFillThunderbolt />}
           arrow="bi bi-caret-down"
           text="Fonte Geradora"
         />
         <ButtonSearchInitialPage
           url="/cadastros/exposicao"
-          icon={<FaRadiation  />}
+          icon={<FaRadiation />}
           arrow="bi bi-caret-down"
           text="Exposição"
         />
         <ButtonSearchInitialPage
           url="/cadastros/meiopropagacao"
-          icon={<TbWind  />}
+          icon={<TbWind />}
           arrow="bi bi-caret-down"
           text="Meio de Propagação"
         />
         <ButtonSearchInitialPage
           url="/cadastros/tragetoria"
-          icon={<GrDirections  />}
+          icon={<GrDirections />}
           arrow="bi bi-caret-down"
           text="Tragetória"
         />
         <ButtonSearchInitialPage
           url="/cadastros/medidacontrole"
-          icon={<AiOutlineControl  />}
+          icon={<AiOutlineControl />}
           arrow="bi bi-caret-down"
           text="Medida de Controle"
         />

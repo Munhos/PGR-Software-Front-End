@@ -1,8 +1,17 @@
-.containerPrimaryButtons{
+.containerPrimaryButtons, .containerSecondaryButtons, .containerThirdButtons{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    background-color: var(--green02);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 67PX;
+}
+
+.containerSecundaryButtons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     background-color: var(--green02);
     border-radius: 10px;
     flex-wrap: wrap;
